@@ -19,3 +19,89 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* custom scrollbar styles  */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* homepage background styles  */
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-bg-green {
+  position: absolute;
+  top: -600px;
+  left: 50%;
+  height: 100vw;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#11FF00, transparent, transparent);
+}
+
+.home-bg-red {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 100vw;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#FF0066, transparent, transparent);
+}
+
+.home-bg-blue {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  height: 100vw;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#0051FF, transparent, transparent);
+}
+
+.home-bg-spring {
+  position: absolute;
+  top: 1200px;
+  right: 50%;
+  height: 100vw;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#00FFBB, transparent, transparent);
+}
+
+.home-bg-gray {
+  position: absolute;
+  bottom: -600px;
+  height: 100vw;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#BEBEBE, transparent, transparent);
+}

@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         ribes: ['Ribes', 'sans-serif'],
       },
+      boxShadow: {
+        'bottom-right': '10px 10px #2D2D2D',
+      },
     },
   },
   plugins: [],
