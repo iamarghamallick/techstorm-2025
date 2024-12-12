@@ -33,14 +33,14 @@ const Header = () => {
             </div>
 
             {/* navbar for small screen devices */}
-            {isOpen && <nav className={`flex flex-col md:hidden navlinks-container h-screen w-full justify-center items-center gap-8 p-4 ${righteous.className} leading-8 w-[calc(100%-256px)] bg-[#202020] absolute top-14 left-0`}>
+            <nav className={`overflow-hidden fixed top-14 left-0 w-full bg-[#202020] flex flex-col md:hidden justify-center items-center gap-4 p-4 ${righteous.className} leading-8 transition-all duration-500 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-0 opacity-0'}`}>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Home</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Events</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Sponsors</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Gallery</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Schedule</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Team</Link>
-            </nav>}
+            </nav>
         </header>
     )
 }
