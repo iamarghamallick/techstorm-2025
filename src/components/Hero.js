@@ -4,15 +4,9 @@ import React from 'react'
 
 const Hero = () => {
     return (
-<<<<<<< HEAD
         <div className='p-2 min-h-screen flex flex-col justify-center items-center'>
             <div className='flex flex-col gap-4 md:gap-8 justify-center items-center'>
                 <Image src='/assets/hero/techstorm.svg' alt='techstorm' width={1217} height={187} className='w-full' />
-=======
-        <div className='p-2 px-24 min-h-screen flex flex-col justify-center items-center'>
-            <div className='grid grid-cols-9 gap-4 justify-center items-center'>
-                <Image src='/assets/hero/techstorm.svg' alt='techstorm' width={1217} height={187} className='w-full col-span-9 align-middle' />
->>>>>>> 84263d79c54faa213038cd6e3476e48c4533d57a
 
                 <div className="flex gap-2 w-full justify-center items-center">
                     <Image src='/assets/hero/DSC_0219.jpg' alt='hero-img' width={6000} height={4000} className='w-3/5 rounded-3xl grayscale h-[6rem] md:h-[16rem] object-cover' />
