@@ -4,7 +4,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='p-2 min-h-screen flex flex-col justify-center items-center'>
+        <div className='p-2 px-24 min-h-screen flex flex-col justify-center items-center'>
             <div className='grid grid-cols-9 gap-4 justify-center items-center'>
                 <Image src='/assets/hero/techstorm.svg' alt='techstorm' width={1217} height={187} className='w-full col-span-9 align-middle' />
 
