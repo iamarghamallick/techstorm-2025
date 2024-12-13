@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'StretchPro';
+  src: url('/assets/fonts/stretch-pro.regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -105,3 +112,18 @@ body {
   border-radius: 50%;
   background-image: radial-gradient(#BEBEBE, transparent, transparent);
 }
+
+/* ribbon animation  */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* .animate-scroll {
+  animation: scroll 10s linear infinite;
+} */
