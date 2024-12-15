@@ -94,7 +94,7 @@ const Events = () => {
 
     return (
         <>
-            <h1 className="font-ribes text-5xl my-8">Events</h1>
+            <h1 className="font-ribes text-5xl my-8 pl-2">Events</h1>
             <div className="relative max-w-7xl mx-auto px-4 py-8">
                 <div
                     ref={sliderRef}
