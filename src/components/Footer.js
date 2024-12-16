@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className='bg-[#01002A] pt-20 pb-2'>
             <div className='container mx-auto flex flex-col md:flex-row gap-12 md:gap-2 justify-between items-center md:items-start border-b pb-8'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h1 className={`${righteous.className} text-4xl`}>TechStorm</h1>
+                    <h1 className={`${righteous.className} text-4xl leading-none`}>TechStorm</h1>
                     <h1 className={`${righteous.className} text-[5.75rem] leading-none`}>2.25</h1>
                 </div>
 

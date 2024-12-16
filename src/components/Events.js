@@ -2,62 +2,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import EventCard from "./EventCard";
+import { cards } from "@/lib/events";
 
 const Events = () => {
     const sliderRef = useRef(null);
     const [showLeftButton, setShowLeftButton] = useState(false);
     const [showRightButton, setShowRightButton] = useState(true);
-
-    const cards = [
-        {
-            id: 1,
-            title: "Event 1",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event1.png",
-        },
-        {
-            id: 2,
-            title: "Event 2",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event2.png",
-        },
-        {
-            id: 3,
-            title: "Event 3",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event3.png",
-        },
-        {
-            id: 4,
-            title: "Event 4",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event4.png",
-        },
-        {
-            id: 5,
-            title: "Event 5",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event2.png",
-        },
-        {
-            id: 6,
-            title: "Event 3",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event3.png",
-        },
-        {
-            id: 7,
-            title: "Event 4",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event4.png",
-        },
-        {
-            id: 8,
-            title: "Event 5",
-            icon: "/assets/events/icons/event1.svg",
-            image: "/assets/events/event2.png",
-        }
-    ];
 
     const scroll = (direction) => {
         const container = sliderRef.current;

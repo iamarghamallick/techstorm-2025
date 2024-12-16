@@ -2,10 +2,12 @@ import { righteous } from '@/app/fonts'
 import Image from 'next/image'
 import React from 'react'
 import Ribbon from './Ribbon'
+import StarsBackground from './StarsBackground'
 
 const Hero = () => {
     return (
-        <div className='relative p-2 min-h-screen flex flex-col justify-center items-center bg-[url("/assets/hero/meta_girl.png")] bg-cover bg-center bg-no-repeat'>
+        <div className='relative p-2 min-h-screen flex flex-col justify-center items-center bg-[url("/assets/hero/meta_girl.png")] bg-no-repeat bg-center md:bg-[position:120%_center] bg-[size:auto_100%]'>
+            <StarsBackground />
             <div className='flex flex-col gap-4 md:gap-8 justify-center items-center pb-12'>
                 <Image src='/assets/hero/techstorm.svg' alt='techstorm' width={1217} height={187} className='w-full' />
 
@@ -18,7 +20,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='absolute bottom-0'>
+            <div className='absolute -bottom-12 mb-12'>
                 <Ribbon />
             </div>
         </div>
