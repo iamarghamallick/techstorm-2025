@@ -25,7 +25,10 @@ const Faq = () => {
     const toggleAccordion = (index) => setOpenIndex(openIndex === index ? -1 : index);
 
     return (
-        <div className="p-2 my-14 flex flex-col md:flex-row justify-center items-center md:items-start gap-0 md:gap-8">
+        <div className="relative p-2 my-14 flex flex-col md:flex-row justify-center items-center md:items-start gap-0 md:gap-8">
+
+            <div className="home-bg-cyan"></div>
+
             <h1 className={`md:hidden font-ribes text-5xl text-white`}>FAQ&apos;s</h1>
 
             <Image src="/assets/faq/faq.svg" alt="FAQ" width={500} height={500} className="w-[75%] md:w-1/2 h-[28rem]" />

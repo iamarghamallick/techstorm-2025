@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import EventCard from "./EventCard";
-import { cards } from "@/lib/events";
+import { events } from "@/lib/events";
 
 const Events = () => {
     const sliderRef = useRef(null);
@@ -43,7 +43,10 @@ const Events = () => {
     }, []);
 
     return (
-        <>
+        <div className="relative">
+            <div className="home-bg-red-top"></div>
+            <div className="home-bg-red-bottom"></div>
+
             <h1 className="font-ribes text-5xl my-8 pl-2">Events</h1>
             <div className="relative max-w-7xl mx-auto px-4 py-8">
                 <div
@@ -51,7 +54,7 @@ const Events = () => {
                     className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-4"
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                 >
-                    {cards.map((card) => (
+                    {events.map((card) => (
                         <EventCard key={card.id} {...card} />
                     ))}
                 </div>
@@ -76,7 +79,7 @@ const Events = () => {
                     </button>
                 )}
             </div>
-        </>
+        </div>
     );
 };
 

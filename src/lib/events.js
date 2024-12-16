@@ -1,4 +1,6 @@
-export const cards = [
+// all event categories
+
+export const events = [
     {
         id: 1,
         title: "Brain Teaser",
