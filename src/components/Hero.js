@@ -24,7 +24,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='absolute -bottom-12 mb-12'>
+            <div className='absolute -bottom-12'>
                 <Ribbon />
             </div>
         </div>

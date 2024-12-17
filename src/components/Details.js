@@ -4,7 +4,7 @@ import { righteous } from '@/app/fonts'
 
 const Details = () => {
     return (
-        <div className='p-2 py-8 flex flex-col md:flex-row gap-8 justify-center items-center'>
+        <div className='p-2 py-8 my-12 flex flex-col md:flex-row gap-8 justify-center items-center'>
             <div className={`${righteous.className} date-time-container flex flex-col justify-center items-center relative pr-10 md:mr-10 md:w-[25%]`}>
                 {/* Vertical Line */}
                 <span className="absolute right-0 top-1/2 transform -translate-y-1/2 h-3/5 w-0.5 border-r border-dashed border-white"></span>

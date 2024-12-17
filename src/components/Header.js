@@ -10,7 +10,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className='sticky top-0 p-2 md:px-24 md:py-4 z-10 bg-[#1E1336]/60 backdrop-blur-md shadow-md z-30'>
+        <header className='sticky top-0 p-2 md:px-24 md:py-4 backdrop-blur-xl shadow-md z-30'>
             <div className="container mx-auto flex justify-between items-center h-11 md:h-16">
                 <div className="logo-container flex gap-4">
                     <Image src='/assets/logo/bppimt-logo.png' alt='bppimt' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' />
@@ -33,7 +33,7 @@ const Header = () => {
             </div>
 
             {/* navbar for small screen devices */}
-            <nav className={`overflow-hidden fixed top-14 left-0 w-full bg-[#202020] flex flex-col md:hidden justify-center items-center gap-4 p-4 ${righteous.className} leading-8 transition-all duration-500 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-0 opacity-0'}`}>
+            <nav className={`overflow-hidden fixed top-14 left-0 w-full bg-[#1E1336] flex flex-col md:hidden justify-center items-center gap-4 p-4 ${righteous.className} leading-8 transition-all duration-500 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-0 opacity-0'}`}>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Home</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/events' className='text-lg'>Events</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Sponsors</Link>
