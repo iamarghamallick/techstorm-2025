@@ -44,8 +44,16 @@ const Events = () => {
 
     return (
         <div className="relative">
-            <div className="home-bg-red-top"></div>
-            <div className="home-bg-red-bottom"></div>
+
+            {/* bg effects: styled in /src/app/globals.css  */}
+            {/* top left  */}
+            <div className="home-bg-red-top hidden md:block"></div>
+
+            {/* bottom right  */}
+            <div className="home-bg-red-bottom hidden md:block"></div>
+
+            {/* top center  */}
+            <div className="home-bg-events-top md:hidden"></div>
 
             <h1 className="font-ribes text-5xl my-8 pl-2">Events</h1>
             <div className="relative max-w-7xl mx-auto px-4 py-8">

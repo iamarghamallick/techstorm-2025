@@ -6,7 +6,12 @@ import { GoLinkExternal } from "react-icons/go";
 
 const Gallery = () => {
     return (
-        <div className='p-2 py-8 my-8 flex flex-col md:flex-row gap-4 justify-center items-center md:h-[530px]'>
+        <div className='p-2 py-8 my-8 flex flex-col md:flex-row gap-4 justify-center items-center md:h-[530px] relative'>
+
+            {/* bg effects: styled in /src/app/globals.css  */}
+            {/* top center  */}
+            <div className="home-bg-gallery-top md:hidden"></div>
+
             <div className='w-full md:w-2/5 md:h-full'>
                 <Image src='/assets/gallery/DSC_0307.JPG' alt='gallery-image-1' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square' />
             </div>

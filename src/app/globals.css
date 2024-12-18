@@ -55,18 +55,6 @@ body {
   overflow: hidden;
 }
 
-.home-bg-green {
-  position: absolute;
-  top: -600px;
-  left: 50%;
-  height: 100vw;
-  width: 100vw;
-  opacity: 0.6;
-  z-index: -1;
-  border-radius: 50%;
-  background-image: radial-gradient(#11FF00, transparent, transparent);
-}
-
 .home-bg-red-top {
   position: absolute;
   top: -800px;
@@ -97,6 +85,42 @@ body {
   right: 40%;
   height: 100vw;
   width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#00FFF2, transparent, transparent);
+}
+
+.home-bg-gallery-top {
+  position: absolute;
+  top: -100px;
+  transform: translateY(-50%);
+  height: 100vh;
+  width: 100vh;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#FF0066, transparent, transparent);
+}
+
+.home-bg-events-top {
+  position: absolute;
+  top: -40%;
+  left: -50%;
+  height: 100vh;
+  width: 100vh;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 50%;
+  background-image: radial-gradient(#FF0066, transparent, transparent);
+}
+
+.home-bg-faq-top {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
   opacity: 0.6;
   z-index: -1;
   border-radius: 50%;

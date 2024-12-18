@@ -27,7 +27,12 @@ const Faq = () => {
     return (
         <div className="relative p-2 my-14 flex flex-col md:flex-row justify-center items-center md:items-start gap-0 md:gap-8">
 
-            <div className="home-bg-cyan"></div>
+            {/* bg effects: styled in /src/app/globals.css  */}
+            {/* left bg  */}
+            <div className="home-bg-cyan hidden md:block"></div>
+
+            {/* top center  */}
+            <div className="home-bg-faq-top md:hidden"></div>
 
             <h1 className={`md:hidden font-ribes text-5xl text-white`}>FAQ&apos;s</h1>
 
