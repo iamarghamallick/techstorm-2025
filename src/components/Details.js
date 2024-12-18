@@ -27,7 +27,7 @@ const Details = () => {
                 </h1>
             </div>
 
-            <div className='map-container rounded-xl w-full md:w-[35%]'><GoogleMap /></div>
+            <div className='map-container rounded-xl w-full md:w-[35%] z-30'><GoogleMap /></div>
 
             <div className={`${righteous.className} date-time-container flex flex-col gap-6 w-full md:w-[40%]`}>
                 <h1 className="text-2xl text-left relative after:content-[''] after:block after:h-0.5 after:w-full after:border-t after:border-dotted after:border-white after:mt-4 after:mx-auto">VENUE</h1>

@@ -1,13 +1,14 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const Ribbon = () => {
     return (
-        <Marquee direction="left" loop={0} className="relative h-12 bg-black/80 overflow-hidden">
+        <Marquee direction="left" speed={50} gradient={false} pauseOnHover={true} loop={0} className="relative h-12 bg-black/80">
             {/* Moving Ribbon */}
-            <div className="flex justify-center items-center gap-4 h-full animate-scroll whitespace-nowrap">
-                {Array.from({ length: 100 }).map((_, index) => (
+            <div className="flex items-center gap-4 whitespace-nowrap">
+                {/* Repeating content */}
+                {[...Array(10)].map((_, index) => (
                     <div key={index} className="flex items-center gap-4">
                         <div className="font-stretchpro text-xl text-white">TEECHSTOORM</div>
                         <Image

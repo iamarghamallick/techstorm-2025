@@ -14,10 +14,17 @@ export default function Home() {
         mixBlendMode: 'plus-lighter',
       }} />
 
-      <Image src='/assets/bg/gradient-1.svg' width={1000} height={1000} alt='background' className="absolute h-[1024px] w-[908px] -left-96" />
-      <Image src='/assets/bg/gradient-2.svg' width={1000} height={1000} alt='background' className="absolute h-[1300px] w-[1400px] left-[779px] top-[-236.46px]" />
-      <Image src='/assets/bg/gradient-3.svg' width={1000} height={1000} alt='background' className="absolute h-[800px] w-[700px] top-[-500px]" />
-      <Image src='/assets/bg/gradient-3.svg' width={1000} height={1000} alt='background' className="absolute h-[630px] w-[630px] left-[807px] top-[792.26px]" />
+      {/* left most side */}
+      <Image src='/assets/bg/gradient-1.svg' width={1000} height={1000} alt='background' className="absolute h-[1024px] w-[908px] top-[-100px] md:top-auto left-[-200px] md:left-[-384px]" />
+
+      {/* right most side */}
+      <Image src='/assets/bg/gradient-2.svg' width={1000} height={1000} alt='background' className="absolute h-[1300px] w-[1400px] left-[-200px] md:left-[779px] top-[200px] md:top-[-236.46px]" />
+
+      {/* top center  */}
+      <Image src='/assets/bg/gradient-3.svg' width={1000} height={1000} alt='background' className="absolute h-[800px] w-[700px] top-[-300px]" />
+
+      {/* right bottom corner */}
+      <Image src='/assets/bg/gradient-4.svg' width={1000} height={1000} alt='background' className="absolute h-[630px] w-[630px] left-[50px] md:left-[700px] top-[800px] md:top-[900px]" />
 
       {/* background effects ends here  */}
 
