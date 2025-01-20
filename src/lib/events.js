@@ -1,4 +1,4 @@
-// all event categories
+// all event categories with their respective events
 
 export const events = [
     {
@@ -6,12 +6,16 @@ export const events = [
         title: "Brain Teaser",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event1.png",
+        eventCount: 3,
+        eventNames: ["omegatrix", "techhunt", "hackmania"],
     },
     {
         id: 2,
         title: "Technical",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event2.png",
+        eventCount: 3,
+        eventNames: ["omegatrix", "techhunt", "hackmania"],
     },
     {
         id: 3,

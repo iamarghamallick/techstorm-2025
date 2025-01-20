@@ -4,7 +4,7 @@ import React from 'react'
 
 const EventCategoryCard = ({ title, icon, image }) => {
     return (
-        <Link href='/' className="w-full h-60 md:h-96 shadow-lg overflow-hidden relative rounded-lg">
+        <Link href={"/events/" + title.toLowerCase().replace(/\s+/g, '')} className="w-full h-60 md:h-96 shadow-lg overflow-hidden relative rounded-lg block">
             <Image
                 src={image}
                 alt={title}

@@ -21,10 +21,10 @@ const Header = () => {
                 <div className={`hidden md:flex navlinks-container justify-around gap-8 border-2 border-[#7C7C7C] rounded-3xl p-4 px-8 ${righteous.className} leading-8 bg-[#202020] shadow-bottom-right`}>
                     <Link href='/' className='text-lg'>Home</Link>
                     <Link href='/events' className='text-lg'>Events</Link>
-                    <Link href='/' className='text-lg'>Sponsors</Link>
-                    <Link href='/' className='text-lg'>Gallery</Link>
-                    <Link href='/' className='text-lg'>Schedule</Link>
-                    <Link href='/' className='text-lg'>Team</Link>
+                    <Link href='/sponsors' className='text-lg'>Sponsors</Link>
+                    <Link href='/gallery' className='text-lg'>Gallery</Link>
+                    <Link href='/schedule' className='text-lg'>Schedule</Link>
+                    <Link href='/team' className='text-lg'>Team</Link>
                 </div>
 
                 <button onClick={() => setIsOpen(!isOpen)} className='md:hidden'>
@@ -36,10 +36,10 @@ const Header = () => {
             <nav className={`overflow-hidden fixed top-14 left-0 w-full bg-[#1E1336] flex flex-col md:hidden justify-center items-center gap-4 p-4 ${righteous.className} leading-8 transition-all duration-500 ease-in-out ${isOpen ? 'h-screen opacity-100' : 'h-0 opacity-0'}`}>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Home</Link>
                 <Link onClick={() => setIsOpen(!isOpen)} href='/events' className='text-lg'>Events</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Sponsors</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Gallery</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Schedule</Link>
-                <Link onClick={() => setIsOpen(!isOpen)} href='/' className='text-lg'>Team</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} href='/sponsors' className='text-lg'>Sponsors</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} href='/gallery' className='text-lg'>Gallery</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} href='/schedule' className='text-lg'>Schedule</Link>
+                <Link onClick={() => setIsOpen(!isOpen)} href='/team' className='text-lg'>Team</Link>
             </nav>
         </header>
     )
