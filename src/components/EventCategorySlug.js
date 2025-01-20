@@ -25,7 +25,7 @@ const EventCategorySlug = ({ slug }) => {
             setCurrEvents(events[validEventCategories.get(slug)]);
             setIsValidSlug(true);
         }
-        console.log(allEvents.get("omegatrix"));
+        // console.log(allEvents.get("omegatrix"));
     }, [slug]);
 
     return (

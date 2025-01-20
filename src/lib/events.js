@@ -1,4 +1,7 @@
 // all event categories with their respective events
+// eventNames should be the updated very carefully, no typo should be there
+// format eventNames "Brain Teaser" => "brainteaser"
+// to lower case and remove spaces
 
 export const events = [
     {
@@ -7,7 +10,7 @@ export const events = [
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event1.png",
         eventCount: 3,
-        eventNames: ["omegatrix", "techhunt", "hackmania"],
+        eventNames: ["omegatrix", "techhunt", "hackstorm"],
     },
     {
         id: 2,
@@ -15,7 +18,7 @@ export const events = [
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event2.png",
         eventCount: 3,
-        eventNames: ["omegatrix", "techhunt", "hackmania"],
+        eventNames: ["omegatrix", "techhunt", "codebee"],
     },
     {
         id: 3,

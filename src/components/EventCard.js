@@ -3,7 +3,7 @@ import React from 'react'
 
 const EventCard = ({ title, icon, image }) => {
     return (
-        <div className="min-w-[300px] max-w-[300px] h-[400px] shadow-lg overflow-hidden relative">
+        <div className="min-w-[300px] max-w-[300px] h-[400px] shadow-lg overflow-hidden relative rounded-lg">
             <Image
                 src={image}
                 alt={title}

@@ -10,7 +10,7 @@ const EventCategoryCard = ({ title, icon, image }) => {
                 alt={title}
                 width={3000}
                 height={4000}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
             />
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent"></div>
