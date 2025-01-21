@@ -2,7 +2,7 @@ export const team = [
     {
         "id": 0,
         "name": "John Doe",
-        "image": "/assets/team/johndoe.png",
+        "image": "/assets/team/arghamallick.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#FF9595",
     },

@@ -30,26 +30,26 @@ const SingleEventSlug = ({ slug }) => {
     return (
         <div className='container'>
             {isValidSlug && currEvent && <div>
-                <div className='flex gap-8'>
-                    <div className="w-1/3 relative">
+                <div className='flex flex-col md:flex-row gap-2 md:gap-8'>
+                    <div className="md:w-1/3 relative">
                         <Image
                             src={currEvent.bgImage}
                             alt={currEvent.title + " pic"}
                             width={400}
                             height={300}
-                            className="w-full rounded-tl-3xl"
+                            className="w-full rounded-t-3xl md:rounded-tl-3xl"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-l from-[#1e1336] to-transparent rounded-tl-3xl"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#1e1336] to-transparent rounded-t-3xl md:rounded-tl-3xl"></div>
                     </div>
-                    <div className="w-2/3 flex flex-col gap-4">
+                    <div className="md:w-2/3 flex flex-col gap-4">
                         <h1 className={`${righteous.className} text-4xl font-bold`}>{currEvent.title}</h1>
                         <p className={`${poppins.className} text-lg`}>{currEvent.description}</p>
                         <Link href={currEvent.registrationLink} target="_blank" className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-4 border border-green-300`}>Register Now!</Link>
                     </div>
                 </div>
 
-                <div className='flex gap-8 my-10'>
-                    <div className="w-1/3 flex flex-col gap-6 justify-center items-center">
+                <div className='flex flex-col md:flex-row gap-2 md:gap-8 my-10'>
+                    <div className="md:w-1/3 flex flex-col gap-2 md:gap-6 justify-center items-center">
                         {[
                             {
                                 heading: "Prize",
@@ -102,9 +102,9 @@ const SingleEventSlug = ({ slug }) => {
                         ))}
                     </div>
 
-                    <div className="w-2/3 pl-12">
+                    <div className="md:w-2/3 pl-4 md:pl-12">
                         <h1 className={`${poppins.className} font-bold text-4xl py-4`}>Rules and Regulations</h1>
-                        <div className='flex flex-col gap-4'>
+                        <div className='flex flex-col gap-2 md:gap-4'>
                             {currEvent.rules.map((rule, index) => (
                                 <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
                             ))}

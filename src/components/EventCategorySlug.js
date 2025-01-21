@@ -32,7 +32,7 @@ const EventCategorySlug = ({ slug }) => {
         <div className="container">
             {isValidSlug && currEvents && <div className="">
                 <EventCategoryCard title={currEvents.title} icon={currEvents.icon} image={currEvents.image} />
-                <div className='w-full grid grid-cols-3 gap-4 my-8'>
+                <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-4 my-8'>
                     {currEvents.eventNames.map((card) => {
                         const event = allEvents.get(card);
                         if (!event) {
