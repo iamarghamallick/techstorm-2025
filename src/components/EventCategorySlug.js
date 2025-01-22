@@ -6,6 +6,7 @@ import EventCategoryCard from './EventCategoryCard';
 import EventCard from './EventCard';
 import { allEvents } from '@/lib/event-details/all-events';
 import Link from 'next/link';
+import { toLinkText } from '@/utils/toLinkText';
 
 const EventCategorySlug = ({ slug }) => {
     const router = useRouter();
@@ -40,7 +41,7 @@ const EventCategorySlug = ({ slug }) => {
                             return null;
                         }
                         return (
-                            <Link key={card} href={"/eventdetails/" + event.title.toLowerCase().replace(/\s+/g, '')} className='m-auto'>
+                            <Link key={card} href={"/eventdetails/" + toLinkText(event.title)} className='m-auto'>
                                 <EventCard
                                     title={event.title}
                                     icon={event.icon}

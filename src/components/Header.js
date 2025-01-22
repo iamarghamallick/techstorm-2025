@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="logo-container flex gap-4">
                     <Image src='/assets/logo/bppimt-logo.png' alt='bppimt' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' />
                     <Image src='/assets/logo/abhiyantran-logo.png' alt='abhiyantran' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' />
-                    <Image src='/assets/logo/techstorm-logo.png' alt='techstorm' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' />
+                    <Link href="/"><Image src='/assets/logo/techstorm-logo.png' alt='techstorm' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' /></Link>
                 </div>
 
                 <div className={`hidden md:flex navlinks-container justify-around gap-8 border-2 border-[#7C7C7C] rounded-3xl p-4 px-8 ${righteous.className} leading-8 bg-[#202020] shadow-bottom-right`}>

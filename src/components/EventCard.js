@@ -16,7 +16,7 @@ const EventCard = ({ title, icon, image }) => {
 
             <div className="absolute bottom-0 left-0 w-full flex flex-col items-center p-4">
                 <Image src={icon} alt={title} width={70} height={70} />
-                <h3 className="font-ribes text-6xl font-semibold text-white mt-2">{title}</h3>
+                <h3 className="font-ribes text-6xl font-semibold text-white mt-2 text-center">{title}</h3>
             </div>
         </div>
     )

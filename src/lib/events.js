@@ -1,59 +1,55 @@
 // all event categories with their respective events
 // eventNames should be the updated very carefully, no typo should be there
 // format eventNames "Brain Teaser" => "brainteaser"
-// to lower case and remove spaces
+// to lower case and remove spaces in between (if any)
 
 export const events = [
     {
         id: 1,
-        title: "Brain Teaser",
+        title: "Brain Teasers",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event1.png",
-        eventCount: 3,
-        eventNames: ["omegatrix", "techhunt", "hackstorm"],
+        eventCount: 2,
+        eventNames: ["techhunt", "omegatrix"],
     },
     {
         id: 2,
-        title: "Technical",
+        title: "Technicals",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event2.png",
         eventCount: 3,
-        eventNames: ["omegatrix", "techhunt", "codebee"],
+        eventNames: ["codebee", "hackstorm", "technomania"],
     },
     {
         id: 3,
-        title: "Event 3",
+        title: "Rovers",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event3.png",
+        eventCount: 5,
+        eventNames: ["rocombat", "ronavigator", "rosoccer", "roterrance", "aquarace"],
     },
     {
         id: 4,
-        title: "Event 4",
+        title: "Games",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event4.png",
+        eventCount: 3,
+        eventNames: ["efootball", "fifa", "khet"],
     },
     {
         id: 5,
-        title: "Event 5",
+        title: "Creative",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event2.png",
+        eventCount: 2,
+        eventNames: ["passionwithreels", "shutterfusion"],
     },
     {
         id: 6,
-        title: "Event 3",
+        title: "School Connect",
         icon: "/assets/events/icons/event1.svg",
         image: "/assets/events/event3.png",
+        eventCount: 3,
+        eventNames: ["codebeejr", "technomaniajr", "hackstormjr"],
     },
-    {
-        id: 7,
-        title: "Event 4",
-        icon: "/assets/events/icons/event1.svg",
-        image: "/assets/events/event4.png",
-    },
-    {
-        id: 8,
-        title: "Event 5",
-        icon: "/assets/events/icons/event1.svg",
-        image: "/assets/events/event2.png",
-    }
 ];

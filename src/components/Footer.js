@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='bg-[#01002A] pt-20 pb-2'>
+        <footer className='bg-[#01002A] px-4 pt-20 pb-2'>
             <div className='container mx-auto flex flex-col md:flex-row gap-12 md:gap-2 justify-between items-center md:items-start border-b pb-8'>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className={`${righteous.className} text-4xl leading-none`}>TechStorm</h1>

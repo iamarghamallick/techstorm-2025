@@ -1,6 +1,6 @@
 export const aquarace = {
     id: 0,
-    title: "Aquarace",
+    title: "Aqua Race",
     bgImage: "/assets/events/event1.png",
     icon: "/assets/events/icons/event1.svg",
 };

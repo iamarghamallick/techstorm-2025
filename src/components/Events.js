@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import EventCard from "./EventCard";
 import { events } from "@/lib/events";
+import Link from "next/link";
 
 const Events = () => {
     const sliderRef = useRef(null);
@@ -63,7 +64,9 @@ const Events = () => {
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                 >
                     {events.map((card) => (
-                        <EventCard key={card.id} {...card} />
+                        <Link key={card.id} href={"/events/" + card.title.toLowerCase().replace(/\s+/g, '')}>
+                            <EventCard {...card} />
+                        </Link>
                     ))}
                 </div>
 

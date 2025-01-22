@@ -1,6 +1,6 @@
-export const ronavigator = {
+export const hackstormjr = {
     id: 0,
-    title: "Ro Navigator",
+    title: "Hack Storm Jr",
     bgImage: "/assets/events/event1.png",
     icon: "/assets/events/icons/event1.svg",
 };

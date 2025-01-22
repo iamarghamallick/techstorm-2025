@@ -1,29 +1,31 @@
 export const eventTitles = [
+    // Brain Teasers
+    "techhunt",
+    "omegatrix",
+
     // Technicals
     "codebee",
     "hackstorm",
     "technomania",
 
+    // Rovers
+    "rocombat",
+    "ronavigator",
+    "rosoccer",
+    "roterrance",
+    "aquarace",
+
+    // Games
+    "efootball",
+    "fifa",
+    "khet",
+
     // Creative
     "passionwithreels",
     "shutterfusion",
 
-    // Games
-    "fifa",
-    "efootball",
-    "khet",
-
-    // Brain Teaser
-    "techhunt",
-    "omegatrix",
-
-    // Rovers
-    "ronavigator",
-    "rosoccer",
-    "rocombat",
-    "roterrance",
-    "aquarace",
-
-    // School Connect 
-    "schoolconnect"
+    // School Connect
+    "codebeejr",
+    "technomaniajr",
+    "hackstormjr",
 ];
