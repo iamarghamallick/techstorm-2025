@@ -127,21 +127,6 @@ body {
   background-image: radial-gradient(#00FFF2, transparent, transparent);
 }
 
-/* ribbon animation  */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* .animate-scroll {
-  animation: scroll 10s linear infinite;
-} */
-
 /* hiding the NextTopLoader spinner from 'nextjs-toploader' */
 .spinner-icon {
   display: none;
