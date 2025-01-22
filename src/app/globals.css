@@ -141,3 +141,8 @@ body {
 /* .animate-scroll {
   animation: scroll 10s linear infinite;
 } */
+
+/* hiding the NextTopLoader spinner from 'nextjs-toploader' */
+.spinner-icon {
+  display: none;
+}
