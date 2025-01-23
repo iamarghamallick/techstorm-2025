@@ -5,7 +5,7 @@ import Ribbon from './Ribbon'
 
 const Hero = () => {
     return (
-        <div className='relative p-2 min-h-screen flex flex-col justify-center items-center'>
+        <div className='relative p-2 min-h-screen flex flex-col justify-center items-center select-none'>
             <div className='flex flex-col gap-4 md:gap-8 justify-center items-center pb-12 min-h-[90vh]'>
                 <Image src='/assets/hero/techstorm.svg' alt='techstorm' width={1217} height={187} className='w-full' style={{
                     mixBlendMode: 'color-dodge',

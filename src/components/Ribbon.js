@@ -9,10 +9,10 @@ const Ribbon = () => {
             <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 240, repeat: Infinity, ease: "linear" }}
                 className="flex flex-shrink-0"
             >
-                {[...Array(5)].map((_, index) => (
+                {[...Array(15)].map((_, index) => (
                     <div key={index} className="flex items-center gap-8 mr-8">
                         <div className="font-stretchpro text-xl text-white">TEECHSTOORM</div>
                         <Image
@@ -29,10 +29,10 @@ const Ribbon = () => {
             <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: "-100%" }}
-                transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 240, repeat: Infinity, ease: "linear" }}
                 className="flex flex-shrink-0"
             >
-                {[...Array(5)].map((_, index) => (
+                {[...Array(15)].map((_, index) => (
                     <div key={index} className="flex items-center gap-8 mr-8">
                         <div className="font-stretchpro text-xl text-white">TEECHSTOORM</div>
                         <Image
