@@ -21,7 +21,12 @@ const Header = () => {
     return (
         <header className={`sticky top-0 p-2 md:px-24 md:py-4 backdrop-blur-md ${isOpen ? "bg-[#1E1336]" : ""} shadow-md transition-colors duration-500 ease-in-out z-30`}>
             <div className="container mx-auto flex justify-between items-center h-11 md:h-16">
-                <div className="logo-container flex gap-4">
+                <motion.div
+                    initial={{ opacity: 0, x: "-100%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 2 }}
+                    className="logo-container flex gap-4"
+                >
                     <Image
                         src='/assets/logo/bppimt-logo.png'
                         alt='bppimt'
@@ -45,10 +50,10 @@ const Header = () => {
                             className='w-8 h-8 md:w-14 md:h-14 drop-shadow-lg'
                         />
                     </Link>
-                </div>
+                </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: -10 }}
+                    initial={{ opacity: 0, y: "-100%" }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     className={`hidden md:flex navlinks-container justify-around gap-8 border-2 border-[#7C7C7C] rounded-3xl p-4 px-8 ${righteous.className} leading-8 bg-[#202020] shadow-bottom-right`}
@@ -73,9 +78,15 @@ const Header = () => {
                     </Link>
                 </motion.div>
 
-                <button onClick={() => setIsOpen(!isOpen)} className='md:hidden'>
+                <motion.button
+                    initial={{ opacity: 0, y: "-100%" }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
+                    onClick={() => setIsOpen(!isOpen)}
+                    className='md:hidden'
+                >
                     {isOpen ? <RxCross1 size={30} /> : <GiHamburgerMenu size={30} />}
-                </button>
+                </motion.button>
             </div>
 
             {/* navbar for small screen devices */}

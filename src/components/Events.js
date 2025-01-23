@@ -4,6 +4,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import EventCard from "./EventCard";
 import { events } from "@/lib/events";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Events = () => {
     const sliderRef = useRef(null);
@@ -44,8 +45,12 @@ const Events = () => {
     }, []);
 
     return (
-        <div className="relative">
-
+        <motion.div
+            initial={{ opacity: 0, y: "100px" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="relative"
+        >
             {/* bg effects: styled in /src/app/globals.css  */}
             {/* top left  */}
             <div className="home-bg-red-top hidden md:block"></div>
@@ -90,7 +95,7 @@ const Events = () => {
                     </button>
                 )}
             </div>
-        </div>
+        </motion.div>
     );
 };
 

@@ -3,6 +3,9 @@ import { actor, inter, righteous } from "@/app/fonts";
 import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { motion } from "framer-motion";
+
+const AnimatedImage = motion(Image);
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(0);
@@ -36,11 +39,25 @@ const Faq = () => {
 
             <h1 className={`md:hidden font-ribes text-5xl text-white`}>FAQ&apos;s</h1>
 
-            <Image src="/assets/faq/faq.svg" alt="FAQ" width={500} height={500} className="w-[75%] md:w-1/2 h-[28rem]" />
+            <AnimatedImage
+                initial={{ opacity: 0, x: "-100%" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                src="/assets/faq/faq.svg"
+                alt="FAQ"
+                width={500}
+                height={500}
+                className="w-[75%] md:w-1/2 h-[28rem]"
+            />
 
             <div className="w-full md:w-1/2 mx-auto p-0 md:p-6 rounded-lg shadow-lg">
                 <h1 className={`hidden md:block font-ribes text-7xl text-white mb-8`}>FAQ&apos;s</h1>
-                <div className="space-y-4">
+                <motion.div
+                    initial={{ opacity: 0, y: "100px" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="space-y-4"
+                >
                     {faqData.map((faq, index) => (
                         <div key={index} className="overflow-hidden">
                             <button
@@ -64,7 +81,7 @@ const Faq = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
     );
