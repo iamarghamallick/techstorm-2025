@@ -10,7 +10,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className={`sticky top-0 p-2 md:px-24 md:py-4 backdrop-blur-xl ${isOpen ? "bg-[#1E1336]" : ""} shadow-md transition-colors duration-500 ease-in-out z-30`}>
+        <header className={`sticky top-0 p-2 md:px-24 md:py-4 backdrop-blur-md ${isOpen ? "bg-[#1E1336]" : ""} shadow-md transition-colors duration-500 ease-in-out z-30`}>
             <div className="container mx-auto flex justify-between items-center h-11 md:h-16">
                 <div className="logo-container flex gap-4">
                     <Image src='/assets/logo/bppimt-logo.png' alt='bppimt' width={600} height={600} className='w-8 h-8 md:w-14 md:h-14' />

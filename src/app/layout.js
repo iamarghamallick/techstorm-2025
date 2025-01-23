@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StarsBackground from "@/components/StarsBackground";
 import NextTopLoader from 'nextjs-toploader';
+import Loading from "@/components/Loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +44,10 @@ export default function RootLayout({ children }) {
         <StarsBackground />
 
         <Header />
+
+        {/* pre-loader  */}
+        <Loading />
+
         {children}
         <Footer />
       </body>
