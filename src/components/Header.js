@@ -18,8 +18,26 @@ const Header = () => {
         setActiveTab(pathname);
     }, [pathname]);
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <header className={`sticky top-0 p-2 md:px-24 md:py-4 backdrop-blur-md ${isOpen ? "bg-[#1E1336]" : ""} shadow-md transition-colors duration-500 ease-in-out z-30`}>
+        <header className={`fixed w-screen top-0 p-2 md:px-24 md:py-4 ${isOpen ? "bg-[#1E1336]" : ""} ${isScrolled ? "backdrop-blur-md shadow-md" : ""} transition-colors duration-500 ease-in-out z-30`}>
             <div className="container mx-auto flex justify-between items-center h-11 md:h-16">
                 <motion.div
                     initial={{ opacity: 0, x: "-100%" }}
@@ -56,7 +74,7 @@ const Header = () => {
                     initial={{ opacity: 0, y: "-100%" }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className={`hidden md:flex navlinks-container justify-around gap-8 border-2 border-[#7C7C7C] rounded-3xl p-4 px-8 ${righteous.className} leading-8 bg-[#202020] shadow-bottom-right`}
+                    className={`hidden md:flex navlinks-container justify-around gap-8 border-2 border-[#7C7C7C]/80 rounded-3xl p-4 px-8 ${righteous.className} leading-8 bg-[#202020]/60 shadow-bottom-right shadow-gray-800/80`}
                 >
                     <Link href='/' className={`text-lg group`}>Home
                         <span className={`block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-purple-400 ${activeTab === "/" ? "max-w-full" : ""}`}></span>

@@ -15,7 +15,7 @@ const Gallery = () => {
             <div className="home-bg-gallery-top md:hidden"></div>
 
             <motion.div
-                initial={{ opacity: 0, x: "-100%" }}
+                initial={{ opacity: 0, x: "-100px" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 className='w-full md:w-2/5 md:h-full'
@@ -29,7 +29,7 @@ const Gallery = () => {
             </div>
 
             <motion.div
-                initial={{ opacity: 0, x: "100%" }}
+                initial={{ opacity: 0, x: "100px" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 className="md:grid md:grid-rows-3 gap-4 w-full md:w-[35%] md:h-full"

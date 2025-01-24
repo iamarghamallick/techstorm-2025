@@ -4,9 +4,9 @@ import { team } from "@/lib/team";
 
 export default function Team() {
     return (
-        <main className="gallery-container min-h-screen flex justify-center p-2 py-8">
+        <main className="mt-16 md:mt-24 gallery-container min-h-screen flex justify-center items-center p-2 py-8">
             <div className="container">
-                <h1 className={`${poppins.className} text-4xl text-white font-bold`}>Meet Our Team</h1>
+                <h1 className={`${poppins.className} text-4xl text-center text-white font-bold`}>Meet Our Team</h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 my-2 md:my-10 gap-2 md:gap-4">
                     {team.map((card, index) => (

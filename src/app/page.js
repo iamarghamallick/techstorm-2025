@@ -28,7 +28,7 @@ export default function Home() {
 
       {/* background effects ends here  */}
 
-      <div className="container md:px-20">
+      <div className="mt-[60px] md:mt-24 container md:px-20">
         <Hero />
         <Details />
         <Gallery />

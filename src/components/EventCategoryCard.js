@@ -1,10 +1,20 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const AnimatedLink = motion(Link);
 
 const EventCategoryCard = ({ title, icon, image }) => {
     return (
-        <Link href={"/events/" + title.toLowerCase().replace(/\s+/g, '')} className="w-full h-60 md:h-96 shadow-lg overflow-hidden relative rounded-lg block">
+        <AnimatedLink
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            href={"/events/" + title.toLowerCase().replace(/\s+/g, '')}
+            className="w-full h-60 md:h-96 shadow-lg overflow-hidden relative rounded-lg block"
+        >
             <Image
                 src={image}
                 alt={title}
@@ -21,7 +31,7 @@ const EventCategoryCard = ({ title, icon, image }) => {
                     <p className="font-ribes text-4xl md:text-6xl font-semibold text-white text-center">{title}</p>
                 </div>
             </div>
-        </Link>
+        </AnimatedLink>
     )
 }
 

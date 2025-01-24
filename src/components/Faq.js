@@ -40,7 +40,7 @@ const Faq = () => {
             <h1 className={`md:hidden font-ribes text-5xl text-white`}>FAQ&apos;s</h1>
 
             <AnimatedImage
-                initial={{ opacity: 0, x: "-100%" }}
+                initial={{ opacity: 0, x: "-100px" }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 src="/assets/faq/faq.svg"
