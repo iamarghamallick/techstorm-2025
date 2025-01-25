@@ -35,12 +35,28 @@ const Gallery = () => {
                 className="md:grid md:grid-rows-3 gap-4 w-full md:w-[35%] md:h-full"
             >
                 <Image src='/assets/gallery/IMG_8144.JPG' alt='gallery-image-4' width={4928} height={3264} className='hidden md:block row-span-2 grayscale w-full h-full object-cover rounded-lg' />
-                <Link href='/gallery' className='flex flex-col justify-center items-center row-span-1 bg-[#262626] rounded-lg py-8 md:py-0'>
-                    <div className="flex gap-2 justify-center items-center">
-                        <h1 className={`${righteous.className} text-3xl text-[#00FFBB] `}>GALLERY</h1>
-                        <GoLinkExternal color='#00FFBB' size={30} />
+
+                <Link
+                    href='/gallery'
+                    className='flex flex-col gap-2 justify-center items-center row-span-1 bg-[#262626] rounded-lg py-8 md:py-0 group hover:shadow-lg hover:shadow-green-400 transition-all duration-300'
+                >
+                    <div className="flex gap-2 justify-center items-center group-hover:scale-105 transition-transform duration-300">
+                        <h1
+                            className={`${righteous.className} text-3xl text-[#00FFBB] group-hover:text-green-300 transition-colors duration-300`}
+                        >
+                            GALLERY
+                        </h1>
+                        <GoLinkExternal
+                            color='#00FFBB'
+                            size={30}
+                            className='group-hover:rotate-45 group-hover:scale-110 transition-transform duration-300'
+                        />
                     </div>
-                    <p className={`${righteous.className} text-[#808080] text-center px-8 md:px-20 leading-none`}>Click to view glimpses from TechStorm 2.24</p>
+                    <p
+                        className={`${righteous.className} text-[#808080] text-center px-8 md:px-20 leading-none group-hover:text-[#FFFFFF] transition-colors duration-300`}
+                    >
+                        Click to view glimpses from TechStorm 2.24
+                    </p>
                 </Link>
             </motion.div>
         </div>

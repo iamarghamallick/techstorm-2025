@@ -7,6 +7,9 @@ import EventCard from './EventCard';
 import { allEvents } from '@/lib/event-details/all-events';
 import Link from 'next/link';
 import { toLinkText } from '@/utils/toLinkText';
+import { motion } from 'framer-motion';
+
+const AnimatedLink = motion(Link);
 
 const EventCategorySlug = ({ slug }) => {
     const router = useRouter();
@@ -29,11 +32,22 @@ const EventCategorySlug = ({ slug }) => {
         // console.log(allEvents.get("omegatrix"));
     }, [slug]);
 
+    const getMdGridCols = (eventCount) => {
+        switch (eventCount) {
+            case 1:
+                return "md:grid-cols-1";
+            case 2:
+                return "md:grid-cols-2";
+            default:
+                return "md:grid-cols-3";
+        }
+    }
+
     return (
         <div className="container">
             {isValidSlug && currEvents && <div className="">
                 <EventCategoryCard title={currEvents.title} icon={currEvents.icon} image={currEvents.image} />
-                <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-4 my-8'>
+                <div className={`w-full grid grid-cols-1 ${getMdGridCols(currEvents.eventCount)} gap-4 my-8`}>
                     {currEvents.eventNames.map((card) => {
                         const event = allEvents.get(card);
                         if (!event) {
@@ -41,13 +55,20 @@ const EventCategorySlug = ({ slug }) => {
                             return null;
                         }
                         return (
-                            <Link key={card} href={"/eventdetails/" + toLinkText(event.title)} className='m-auto'>
+                            <AnimatedLink
+                                initial={{ opacity: 0, y: "100px" }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                key={card}
+                                href={"/eventdetails/" + toLinkText(event.title)}
+                                className='m-auto'
+                            >
                                 <EventCard
                                     title={event.title}
                                     icon={event.icon}
                                     image={event.bgImage}
                                 />
-                            </Link>
+                            </AnimatedLink>
                         );
                     })}
                 </div>

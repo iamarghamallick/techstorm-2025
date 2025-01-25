@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion';
 
 const SingleEventSlug = ({ slug }) => {
     const router = useRouter();
@@ -31,7 +32,12 @@ const SingleEventSlug = ({ slug }) => {
         <div className='container'>
             {isValidSlug && currEvent && <div>
                 <div className='flex flex-col md:flex-row gap-2 md:gap-8'>
-                    <div className="md:w-1/3 relative">
+                    <motion.div
+                        initial={{ opacity: 0, y: "100px" }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="md:w-1/3 relative"
+                    >
                         <Image
                             src={currEvent.bgImage}
                             alt={currEvent.title + " pic"}
@@ -40,12 +46,24 @@ const SingleEventSlug = ({ slug }) => {
                             className="w-full rounded-t-3xl md:rounded-tl-3xl"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#1e1336] to-transparent rounded-t-3xl md:rounded-tl-3xl"></div>
-                    </div>
-                    <div className="md:w-2/3 flex flex-col gap-4">
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: "100px" }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="md:w-2/3 flex flex-col gap-4"
+                    >
                         <h1 className={`${righteous.className} text-4xl font-bold`}>{currEvent.title}</h1>
                         <p className={`${poppins.className} text-lg`}>{currEvent.description}</p>
-                        <Link href={currEvent.registrationLink} target="_blank" className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-4 border border-green-300`}>Register Now!</Link>
-                    </div>
+                        <Link
+                            href={currEvent.registrationLink}
+                            target="_blank"
+                            className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-4 border border-green-300 transition-transform transform hover:scale-[1.02] hover:bg-green-300 hover:text-[#202020]`}
+                        >
+                            Register Now!
+                        </Link>
+                    </motion.div>
                 </div>
 
                 <div className='flex flex-col md:flex-row gap-2 md:gap-8 my-10'>
@@ -88,27 +106,203 @@ const SingleEventSlug = ({ slug }) => {
                                 image: "/assets/eventdetails-icons/finals.png",
                             },
                         ].map((item, index) => (
-                            <div key={index} className="details-box w-full flex justify-between items-end p-2 rounded-lg bg-[#202020c4] h-36">
-                                <div className='w-2/3 flex flex-col pl-2 justify-end'>
+                            <motion.div
+                                initial={{ opacity: 0, y: "100px" }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                key={index}
+                                className="details-box w-full flex justify-between items-end p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300"
+                            >
+                                <div className="w-2/3 flex flex-col pl-2 justify-end group-hover:scale-105 group-hover:translate-x-1 transition-transform duration-300">
                                     <p className={`${poppins.className} font-semibold`}>{item.heading}</p>
-                                    <h1 className={`${poppins.className} font-bold text-4xl text-[#7C7C7C]`}>{item.text}</h1>
-                                    <p className={`${poppins.className} font-semibold text-xs text-[#A4A4A4]`}>{item.desc[0]}</p>
-                                    <p className={`${poppins.className} font-semibold text-xs text-[#A4A4A4]`}>{item.desc[1]}</p>
+                                    <h1
+                                        className={`${poppins.className} font-bold text-4xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
+                                    >
+                                        {item.text}
+                                    </h1>
+                                    <p
+                                        className={`${poppins.className} font-semibold text-xs text-[#A4A4A4] group-hover:text-white transition-colors duration-300`}
+                                    >
+                                        {item.desc[0]}
+                                    </p>
+                                    <p
+                                        className={`${poppins.className} font-semibold text-xs text-[#A4A4A4] group-hover:text-white transition-colors duration-300`}
+                                    >
+                                        {item.desc[1]}
+                                    </p>
                                 </div>
-                                <div className='w-1/3'>
-                                    <Image src={item.image} width={100} height={200} alt='icon' className='h-36 w-auto' />
+                                <div className="w-1/3">
+                                    <Image
+                                        src={item.image}
+                                        width={100}
+                                        height={200}
+                                        alt="icon"
+                                        className="h-36 w-auto group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300"
+                                    />
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
+
+                        <motion.div
+                            initial={{ opacity: 0, y: "100px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="details-box w-full flex justify-between p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-400 hover:bg-[#2A2A2A] transition-all duration-300"
+                        >
+                            <div className="w-full flex flex-col gap-2 group-hover:scale-105 transition-transform duration-300">
+                                <h1
+                                    className={`${poppins.className} font-bold text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
+                                >
+                                    Faculty Coordinators
+                                </h1>
+                                {currEvent.facultyCoordinators.map((coordinator, index) => (
+                                    <div
+                                        key={index}
+                                        className="w-full flex justify-between pl-2 pr-1 group-hover:pl-4 transition-all duration-300"
+                                    >
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.name} ({coordinator.dept})
+                                        </p>
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.phone}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: "100px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="details-box w-full flex justify-between p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-400 hover:bg-[#2A2A2A] transition-all duration-300"
+                        >
+                            <div className="w-full flex flex-col gap-2 group-hover:scale-105 transition-transform duration-300">
+                                <h1
+                                    className={`${poppins.className} font-bold text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
+                                >
+                                    Student Coordinators
+                                </h1>
+                                {currEvent.studentCoordinators.map((coordinator, index) => (
+                                    <div
+                                        key={index}
+                                        className="w-full flex justify-between pl-2 pr-1 group-hover:pl-4 transition-all duration-300"
+                                    >
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.name} ({coordinator.dept})
+                                        </p>
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.phone}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: "100px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="details-box w-full flex justify-between p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-400 hover:bg-[#2A2A2A] transition-all duration-300"
+                        >
+                            <div className="w-full flex flex-col gap-2 group-hover:scale-105 transition-transform duration-300">
+                                <h1
+                                    className={`${poppins.className} font-bold text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
+                                >
+                                    Volunteers
+                                </h1>
+                                {currEvent.volunteers.map((coordinator, index) => (
+                                    <div
+                                        key={index}
+                                        className="w-full flex justify-between pl-2 pr-1 group-hover:pl-4 transition-all duration-300"
+                                    >
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.name} ({coordinator.dept})
+                                        </p>
+                                        <p
+                                            className={`${poppins.className} font-semibold text-sm text-white group-hover:text-green-300 transition-colors duration-300`}
+                                        >
+                                            {coordinator.phone}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
                     </div>
 
-                    <div className="md:w-2/3 pl-4 md:pl-12">
+                    <div className="md:w-2/3">
                         <h1 className={`${poppins.className} font-bold text-4xl py-4`}>Rules and Regulations</h1>
-                        <div className='flex flex-col gap-2 md:gap-4'>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className='flex flex-col gap-2 md:gap-4'
+                        >
                             {currEvent.rules.map((rule, index) => (
                                 <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
                             ))}
-                        </div>
+                        </motion.div>
+
+                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round1}</h1>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className='flex flex-col gap-2 md:gap-4'
+                        >
+                            {currEvent.round1Details.map((rule, index) => (
+                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                            ))}
+                        </motion.div>
+
+                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round2}</h1>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className='flex flex-col gap-2 md:gap-4'
+                        >
+                            {currEvent.round2Details.map((rule, index) => (
+                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                            ))}
+                        </motion.div>
+
+                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round3}</h1>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className='flex flex-col gap-2 md:gap-4'
+                        >
+                            {currEvent.round3Details.map((rule, index) => (
+                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                            ))}
+                        </motion.div>
+
+                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>Contacts</h1>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className='flex flex-col gap-2 md:gap-4'
+                        >
+                            {currEvent.contacts.map((contact, index) => (
+                                <div className='flex gap-2' key={index}>
+                                    <p className={`${poppins.className} text-lg`}>{contact.name} ({contact.dept})</p>
+                                    <p className={`${poppins.className} text-lg`}>{contact.phone}</p>
+                                </div>
+                            ))}
+                        </motion.div>
                     </div>
                 </div>
             </div>}

@@ -1,7 +1,8 @@
-// all event categories with their respective events
+// all event categories with their respective event names
 // eventNames should be the updated very carefully, no typo should be there
-// format eventNames "Brain Teaser" => "brainteaser"
-// to lower case and remove spaces in between (if any)
+// format eventNames like this "Tech Hunt" => "techhunt"
+// change to lower case and remove spaces or semi-colons in between (if any)
+// put categoty names as the image or ion filenames, like brain-teasers.svg for Brain Teasers
 
 export const events = [
     {
