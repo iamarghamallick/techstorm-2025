@@ -1,10 +1,11 @@
-export const team = [
+export const team = [ // core members details
     {
         "id": 0,
         "name": "John Doe",
         "image": "/assets/team/arghamallick.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#FF9595",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
     {
         "id": 0,
@@ -12,6 +13,7 @@ export const team = [
         "image": "/assets/team/johndoe.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#A1FF90",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
     {
         "id": 0,
@@ -19,6 +21,7 @@ export const team = [
         "image": "/assets/team/johndoe.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#FF9595",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
     {
         "id": 0,
@@ -26,6 +29,7 @@ export const team = [
         "image": "/assets/team/johndoe.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#A1FF90",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
     {
         "id": 0,
@@ -33,6 +37,7 @@ export const team = [
         "image": "/assets/team/johndoe.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#A1FF90",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
     {
         "id": 0,
@@ -40,5 +45,78 @@ export const team = [
         "image": "/assets/team/johndoe.png",
         "position": "Core, Event Management Team",
         "bgcolor": "#A1FF90",
+        "linkedin": "https://www.linkedin.com/in/iamarghamallick/",
     },
-]
+];
+
+export const facultyCoordinators = {
+    techhunt: [
+        {
+            "id": 0,
+            "name": "John Doe",
+            "image": "/assets/team/johndoe.png",
+            "position": "Core, Event Management Team",
+            "bgcolor": "#A1FF90",
+            "linkedin": "/",
+        },
+    ],
+    omegatrix: [],
+    codebee: [],
+    hackstorm: [],
+    technomania: [],
+    rocombat: [],
+    ronavigator: [],
+    rosoccer: [],
+    roterrance: [],
+    aquarace: [],
+    efootball: [],
+    fifa: [],
+    khet: [],
+    passionwithreels: [],
+    shutterfusion: [],
+    codebeejr: [],
+    technomaniajr: [],
+    hackstormjr: [],
+};
+
+export const studentCoordinators = {
+    techhunt: [],
+    omegatrix: [],
+    codebee: [],
+    hackstorm: [],
+    technomania: [],
+    rocombat: [],
+    ronavigator: [],
+    rosoccer: [],
+    roterrance: [],
+    aquarace: [],
+    efootball: [],
+    fifa: [],
+    khet: [],
+    passionwithreels: [],
+    shutterfusion: [],
+    codebeejr: [],
+    technomaniajr: [],
+    hackstormjr: [],
+};
+
+export const volunteers = {
+    techhunt: [],
+    omegatrix: [],
+    codebee: [],
+    hackstorm: [],
+    technomania: [],
+    rocombat: [],
+    ronavigator: [],
+    rosoccer: [],
+    roterrance: [],
+    aquarace: [],
+    efootball: [],
+    fifa: [],
+    khet: [],
+    passionwithreels: [],
+    shutterfusion: [],
+    codebeejr: [],
+    technomaniajr: [],
+    hackstormjr: [],
+};

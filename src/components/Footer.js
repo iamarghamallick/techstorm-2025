@@ -14,11 +14,11 @@ const Footer = () => {
 
                 <div className={`${actor.className} flex flex-col items-center md:items-start`}>
                     <h1 className='font-ribes text-3xl mb-4'>Events</h1>
-                    <Link href='/' className='text-[#A4A4A4] underline underline-offset-2'>Creative</Link>
-                    <Link href='/' className='text-[#A4A4A4] underline underline-offset-2'>Games</Link>
-                    <Link href='/' className='text-[#A4A4A4] underline underline-offset-2'>Rovers</Link>
-                    <Link href='/' className='text-[#A4A4A4] underline underline-offset-2'>Brain Teaser</Link>
-                    <Link href='/' className='text-[#A4A4A4] underline underline-offset-2'>Technicals</Link>
+                    <Link href='/events/brainteasers' className='text-[#A4A4A4] underline underline-offset-2'>Brain Teasers</Link>
+                    <Link href='/events/technicals' className='text-[#A4A4A4] underline underline-offset-2'>Technicals</Link>
+                    <Link href='/events/rovers' className='text-[#A4A4A4] underline underline-offset-2'>Rovers</Link>
+                    <Link href='/events/games' className='text-[#A4A4A4] underline underline-offset-2'>Games</Link>
+                    <Link href='/events/creative' className='text-[#A4A4A4] underline underline-offset-2'>Creative</Link>
                 </div>
                 <div className={`${actor.className} flex flex-col items-center md:items-start`}>
                     <h1 className='font-ribes text-3xl mb-4'>Member Details</h1>

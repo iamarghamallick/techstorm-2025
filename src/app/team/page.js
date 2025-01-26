@@ -10,7 +10,7 @@ export default function Team() {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 my-2 md:my-10 gap-2 md:gap-4">
                     {team.map((card, index) => (
-                        <MemberCard key={index} name={card.name} image={card.image} position={card.position} bgcolor={card.bgcolor} />
+                        <MemberCard key={index} name={card.name} image={card.image} position={card.position} bgcolor={card.bgcolor} linkedin={card.linkedin} />
                     ))}
                 </div>
             </div>

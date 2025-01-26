@@ -1,6 +1,8 @@
+"use client";
 import { gallery } from "@/lib/gallery";
 import { poppins, righteous } from "../fonts";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Gallery() {
     return (
@@ -11,10 +13,38 @@ export default function Gallery() {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 my-8 md:px-8">
                     {gallery.map((item, index) => (
-                        <div key={index} className="gallery-item mx-auto relative">
-                            <Image src={item.image} alt="gallery pic" width={400} height={300} className="aspect-square object-cover w-full h-full rounded-lg grayscale hover:filter-none transition-all duration-500 ease-in-out" />
-                            <span className="absolute top-4 right-4 bg-gray-800/80 rounded-lg px-4 py-2">{item.title}</span>
-                        </div>
+                        <motion.div
+                            initial={{ opacity: 0, y: "50px" }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            key={index}
+                            className="gallery-item mx-auto relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                        >
+                            {/* Image with hover zoom and techy animation */}
+                            <Image
+                                src={item.image}
+                                alt="gallery pic"
+                                width={400}
+                                height={300}
+                                className="aspect-square object-cover w-full h-full rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 grayscale group-hover:filter-none"
+                            />
+
+                            {/* Overlay effect */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+
+                            {/* Title Badge */}
+                            <span className="absolute top-4 right-4 bg-gray-800/80 rounded-lg px-4 py-2 text-white text-sm font-semibold transition-transform duration-500 group-hover:scale-110 group-hover:translate-y-1">
+                                {item.title}
+                            </span>
+
+                            {/* Animated Border Glow */}
+                            <div className="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-indigo-500 group-hover:animate-pulse"></div>
+
+                            {/* Floating techy overlay */}
+                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <span className="text-indigo-500 text-3xl font-bold animate-bounce">⚡</span>
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
