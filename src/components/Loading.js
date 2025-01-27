@@ -18,15 +18,15 @@ export default function Loading() {
             }, 1000); // Simulate a longer loading time
         };
 
-        // Listen for the page load event
+        // Listen for the page DOMContentLoaded event
         if (document.readyState === "complete") {
             handlePageLoad(); // If already loaded
         } else {
-            window.addEventListener("load", handlePageLoad);
+            window.addEventListener("DOMContentLoaded", handlePageLoad);
         }
 
         return () => {
-            window.removeEventListener("load", handlePageLoad);
+            window.removeEventListener("DOMContentLoaded", handlePageLoad);
         };
     }, []);
 
