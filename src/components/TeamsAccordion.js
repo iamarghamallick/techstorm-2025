@@ -36,7 +36,7 @@ export default function TeamsAccordion({ teams }) {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div>
                                         {/* Faculty Co-ordinators */}
-                                        <h1 className="text-xl font-bold text-gray-100 mb-4 border-b border-gray-700 pb-2">
+                                        {/* <h1 className="text-xl font-bold text-gray-100 mb-4 border-b border-gray-700 pb-2">
                                             Faculty Co-ordinators
                                         </h1>
                                         <div className="space-y-4 mb-6">
@@ -54,7 +54,7 @@ export default function TeamsAccordion({ teams }) {
                                                     <p className="text-lg text-gray-400">{member.phone}</p>
                                                 </div>
                                             ))}
-                                        </div>
+                                        </div> */}
 
                                         {/* Student Co-ordinators */}
                                         <h1 className="text-xl font-bold text-gray-100 mb-4 border-b border-gray-700 pb-2">

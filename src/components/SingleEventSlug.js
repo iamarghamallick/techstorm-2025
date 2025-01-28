@@ -29,7 +29,7 @@ const SingleEventSlug = ({ slug }) => {
     }, []);
 
     return (
-        <div className='container'>
+        <div className='container px-2'>
             {isValidSlug && currEvent && <div>
                 <div className='flex flex-col md:flex-row gap-2 md:gap-8'>
                     <motion.div
@@ -43,9 +43,10 @@ const SingleEventSlug = ({ slug }) => {
                             alt={currEvent.title + " pic"}
                             width={400}
                             height={300}
-                            className="w-full rounded-t-3xl md:rounded-tl-3xl"
+                            className="w-full h-full object-cover rounded-t-3xl md:rounded-tl-3xl"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#1e1336] to-transparent rounded-t-3xl md:rounded-tl-3xl"></div>
+                        <h1 className={`${righteous.className} md:hidden absolute bottom-0 left-0 text-4xl font-bold`}>{currEvent.title}</h1>
                     </motion.div>
 
                     <motion.div
@@ -54,38 +55,73 @@ const SingleEventSlug = ({ slug }) => {
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 flex flex-col gap-4"
                     >
-                        <h1 className={`${righteous.className} text-4xl font-bold`}>{currEvent.title}</h1>
-                        <p className={`${poppins.className} text-lg`}>{currEvent.description}</p>
+                        <h1 className={`${righteous.className} hidden md:block text-3xl font-bold`}>{currEvent.title}</h1>
+                        <p className={`${poppins.className} px-2 text-xs md:text-base`}>{currEvent.description}</p>
+
+                        <div className="flex gap-4 justify-between items-center">
+                            {[
+                                {
+                                    heading: "Registration Fees for BPPIMT Students",
+                                    text: currEvent.bppimtRegFees,
+                                    image: "/assets/eventdetails-icons/bppimt-logo.png",
+                                },
+                                {
+                                    heading: "Registration Fees for OUTSIDE Students",
+                                    text: currEvent.outsideRegFees,
+                                    image: "/assets/eventdetails-icons/avater.png",
+                                },
+                            ].map((item, index) => (
+                                <motion.div
+                                    initial={{ opacity: 0, y: "30px" }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    key={index}
+                                    className="details-box w-full flex flex-col md:flex-row justify-between items-end p-2 rounded-lg bg-[#202020c4] min-h-24 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300"
+                                >
+                                    <div className="md:w-2/3 flex flex-col pl-2 justify-end group-hover:scale-[1.02] group-hover:translate-x-1 transition-transform duration-300">
+                                        <p className={`${poppins.className} text-sm md:text-base font-semibold`}>{item.heading}</p>
+                                        <h1
+                                            className={`${poppins.className} font-bold text-2xl md:text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300 hidden md:block`}
+                                        >
+                                            {item.text}
+                                        </h1>
+                                    </div>
+                                    <div className="md:w-1/3 flex md:flex-col justify-between items-end">
+                                        <h1
+                                            className={`${poppins.className} font-bold text-2xl md:text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300 md:hidden`}
+                                        >
+                                            {item.text}
+                                        </h1>
+                                        <Image
+                                            src={item.image}
+                                            width={100}
+                                            height={100}
+                                            alt="icon"
+                                            className="w-1/3 md:w-auto max-h-28 aspect-square group-hover:rotate-6 group-hover:scale-[1.02] transition-transform duration-300"
+                                        />
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+
                         <Link
                             href={currEvent.registrationLink}
                             target="_blank"
-                            className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-4 border border-green-300 transition-transform transform hover:scale-[1.02] hover:bg-green-300 hover:text-[#202020]`}
+                            className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-2 border border-green-300 transition-transform transform hover:scale-[1.02] hover:bg-green-300 hover:text-[#202020]`}
                         >
                             Register Now!
                         </Link>
                     </motion.div>
                 </div>
 
-                <div className='flex flex-col md:flex-row gap-2 md:gap-8 my-10'>
-                    <div className="md:w-1/3 flex flex-col gap-2 md:gap-6 justify-center items-center">
+                <div className='flex flex-col md:flex-row gap-2 md:gap-8 my-6 md:my-10'>
+                    <div className="md:w-1/3 flex flex-col gap-4 md:gap-6 items-center">
                         {[
                             {
                                 heading: "Prize",
                                 text: currEvent.prize,
                                 desc: ["", ""],
                                 image: "/assets/eventdetails-icons/prizes.png",
-                            },
-                            {
-                                heading: "Registration Fees for BPPIMT Students",
-                                text: currEvent.bppimtRegFees,
-                                desc: ["", ""],
-                                image: "/assets/eventdetails-icons/bppimt-logo.png",
-                            },
-                            {
-                                heading: "Registration Fees for OUTSIDE Students",
-                                text: currEvent.outsideRegFees,
-                                desc: ["", ""],
-                                image: "/assets/eventdetails-icons/avater.png",
                             },
                             {
                                 heading: "On-spot registration",
@@ -111,12 +147,12 @@ const SingleEventSlug = ({ slug }) => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                                 key={index}
-                                className="details-box w-full flex justify-between items-end p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300"
+                                className="details-box w-full flex justify-between items-end p-2 rounded-lg bg-[#202020c4] h-32 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300"
                             >
-                                <div className="w-2/3 flex flex-col pl-2 justify-end group-hover:scale-105 group-hover:translate-x-1 transition-transform duration-300">
+                                <div className="w-2/3 flex flex-col pl-2 justify-end group-hover:scale-[1.02] group-hover:translate-x-1 transition-transform duration-300">
                                     <p className={`${poppins.className} font-semibold`}>{item.heading}</p>
                                     <h1
-                                        className={`${poppins.className} font-bold text-4xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
+                                        className={`${poppins.className} font-bold text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300`}
                                     >
                                         {item.text}
                                     </h1>
@@ -137,13 +173,13 @@ const SingleEventSlug = ({ slug }) => {
                                         width={100}
                                         height={200}
                                         alt="icon"
-                                        className="h-36 w-auto group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300"
+                                        className="h-full w-auto group-hover:rotate-6 group-hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>
                             </motion.div>
                         ))}
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, y: "100px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
@@ -173,7 +209,7 @@ const SingleEventSlug = ({ slug }) => {
                                     </div>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.div> */}
 
                         <motion.div
                             initial={{ opacity: 0, y: "100px" }}
@@ -207,7 +243,7 @@ const SingleEventSlug = ({ slug }) => {
                             </div>
                         </motion.div>
 
-                        <motion.div
+                        {/* <motion.div
                             initial={{ opacity: 0, y: "100px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
@@ -237,69 +273,69 @@ const SingleEventSlug = ({ slug }) => {
                                     </div>
                                 ))}
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
 
                     <div className="md:w-2/3">
-                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>Rules and Regulations</h1>
+                        <h1 className={`${poppins.className} font-bold text-3xl md:text-4xl py-4`}>Rules and Regulations</h1>
                         <motion.div
                             initial={{ opacity: 0, y: "50px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='flex flex-col gap-2 md:gap-4'
+                            className='flex flex-col gap-1 md:gap-4'
                         >
                             {currEvent.rules.map((rule, index) => (
-                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                                <p key={index} className={`${poppins.className} text-base md:text-lg`}>&bull; {rule}</p>
                             ))}
                         </motion.div>
 
-                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round1}</h1>
+                        <h1 className={`${poppins.className} font-bold text-3xl md:text-4xl py-4`}>{currEvent.round1}</h1>
                         <motion.div
                             initial={{ opacity: 0, y: "50px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='flex flex-col gap-2 md:gap-4'
+                            className='flex flex-col gap-1 md:gap-4'
                         >
                             {currEvent.round1Details.map((rule, index) => (
-                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                                <p key={index} className={`${poppins.className} text-base md:text-lg`}>&bull; {rule}</p>
                             ))}
                         </motion.div>
 
-                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round2}</h1>
+                        <h1 className={`${poppins.className} font-bold text-3xl md:text-4xl py-4`}>{currEvent.round2}</h1>
                         <motion.div
                             initial={{ opacity: 0, y: "50px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='flex flex-col gap-2 md:gap-4'
+                            className='flex flex-col gap-1 md:gap-4'
                         >
                             {currEvent.round2Details.map((rule, index) => (
-                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                                <p key={index} className={`${poppins.className} text-base md:text-lg`}>&bull; {rule}</p>
                             ))}
                         </motion.div>
 
-                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>{currEvent.round3}</h1>
+                        <h1 className={`${poppins.className} font-bold text-3xl md:text-4xl py-4`}>{currEvent.round3}</h1>
                         <motion.div
                             initial={{ opacity: 0, y: "50px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='flex flex-col gap-2 md:gap-4'
+                            className='flex flex-col gap-1 md:gap-4'
                         >
                             {currEvent.round3Details.map((rule, index) => (
-                                <p key={index} className={`${poppins.className} text-lg`}>&bull; {rule}</p>
+                                <p key={index} className={`${poppins.className} text-base md:text-lg`}>&bull; {rule}</p>
                             ))}
                         </motion.div>
 
-                        <h1 className={`${poppins.className} font-bold text-4xl py-4`}>Contacts</h1>
+                        <h1 className={`${poppins.className} font-bold text-3xl md:text-4xl py-4`}>Contacts</h1>
                         <motion.div
                             initial={{ opacity: 0, y: "50px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className='flex flex-col gap-2 md:gap-4'
+                            className='flex flex-col gap-1 md:gap-4'
                         >
                             {currEvent.contacts.map((contact, index) => (
                                 <div className='flex gap-2' key={index}>
-                                    <p className={`${poppins.className} text-lg`}>{contact.name} ({contact.dept})</p>
-                                    <p className={`${poppins.className} text-lg`}>{contact.phone}</p>
+                                    <p className={`${poppins.className} text-base md:text-lg`}>{contact.name} ({contact.dept})</p>
+                                    <p className={`${poppins.className} text-base md:text-lg`}>{contact.phone}</p>
                                 </div>
                             ))}
                         </motion.div>
