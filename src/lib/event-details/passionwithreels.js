@@ -1,4 +1,4 @@
-export const passionWithReels = {
+export const passionwithreels = {
     id: 3,
     link_title: "passionwithreels",
     title: "Passion With Reels",
