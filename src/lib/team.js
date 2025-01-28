@@ -395,125 +395,793 @@ export const allTeams = [
         ],
     },
     {
-        teamName: "Tech Hunt",
-        members: {
-            faculty: [
+        "teamName": "CODE BEE",
+        "members": {
+            "faculty": [
                 {
-                    name: "Faculty Name1",
-                    position: "faculty",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Mr. Subhasis Mallick",
+                    "position": "faculty",
+                    "phone": "9830346454"
                 },
                 {
-                    name: "Faculty Name2",
-                    position: "faculty",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Mr. Himadri Sekar Mondal",
+                    "position": "faculty",
+                    "phone": "9748305446"
                 },
+                {
+                    "name": "Ms. Arpita Sen",
+                    "position": "faculty",
+                    "phone": "7980981953"
+                },
+                {
+                    "name": "Mr. Atif Khan",
+                    "position": "faculty",
+                    "phone": "9088752008"
+                }
             ],
-
-            student: [
+            "student": [
                 {
-                    name: "student Name1",
-                    position: "student",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Udita Sinha",
+                    "department": "CSE",
+                    "position": "student",
+                    "phone": "8797092125"
                 },
                 {
-                    name: "student Name2",
-                    position: "student",
-                    department: "CSE",
-                    phone: "1234567890",
-                },
+                    "name": "Shatarupa Sen",
+                    "department": "IT",
+                    "position": "student",
+                    "phone": "97170 61279"
+                }
             ],
-
-            volunteer: [
+            "volunteer": [
                 {
-                    name: "volunteer Name1",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Adwitiya Ghosh",
+                    "department": "IT",
+                    "phone": "73630 44143"
                 },
                 {
-                    name: "volunteer Name2",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Saptarshi Ghosh",
+                    "department": "CSE",
+                    "phone": "7319517039"
                 },
                 {
-                    name: "volunteer Name3",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Prattay Bhandary",
+                    "department": "CSE",
+                    "phone": "8274034667"
                 },
                 {
-                    name: "volunteer Name3",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
-                },
-            ],
-        },
+                    "name": "Nausheen Qaiyum(Co-SCP)",
+                    "department": "MCA",
+                    "phone": "8583052045"
+                }
+            ]
+        }
     },
     {
-        teamName: "Omegatrix",
-        members: {
-            faculty: [
+        "teamName": "HACK STORM",
+        "members": {
+            "faculty": [
                 {
-                    name: "Faculty Name1",
-                    position: "faculty",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Ms. Swagata (Gayen) Kundu",
+                    "position": "faculty",
+                    "phone": "9874120011"
                 },
                 {
-                    name: "Faculty Name2",
-                    position: "faculty",
-                    department: "CSE",
-                    phone: "1234567890",
-                },
+                    "name": "Mr. Suvadeep Bhattacharjee",
+                    "position": "faculty",
+                    "phone": "9433002878"
+                }
             ],
-
-            student: [
+            "student": [
                 {
-                    name: "student Name1",
-                    position: "student",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Sujal Yadav",
+                    "department": "CSE",
+                    "position": "student",
+                    "phone": "8240880290"
                 },
                 {
-                    name: "student Name2",
-                    position: "student",
-                    department: "CSE",
-                    phone: "1234567890",
-                },
+                    "name": "Sarthak Chakraborty",
+                    "department": "IT",
+                    "position": "student",
+                    "phone": "98753 36343"
+                }
             ],
-
-            volunteer: [
+            "volunteer": [
                 {
-                    name: "volunteer Name1",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Shreya Jha",
+                    "department": "CSE",
+                    "phone": "8001013154"
                 },
                 {
-                    name: "volunteer Name2",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Sayan Roy",
+                    "department": "IT",
+                    "phone": "9874872941"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "OMEGATRIX",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Kakali Karmakar (Sur)",
+                    "position": "faculty",
+                    "phone": "9433978099"
                 },
                 {
-                    name: "volunteer Name3",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Ms. Piu Upadhyay",
+                    "position": "faculty",
+                    "phone": "9681013210"
                 },
                 {
-                    name: "volunteer Name4",
-                    position: "volunteer",
-                    department: "CSE",
-                    phone: "1234567890",
+                    "name": "Ms. Anushree Dutta",
+                    "position": "faculty",
+                    "phone": "9433201748"
                 },
+                {
+                    "name": "Mr. Paltu Halder",
+                    "position": "faculty",
+                    "phone": "7797106489"
+                }
             ],
-        },
+            "student": [
+                {
+                    "name": "Jayasree Saha",
+                    "department": "IT",
+                    "position": "student",
+                    "phone": "7980666479"
+                },
+                {
+                    "name": "Poulami Sarkar",
+                    "department": "CSE",
+                    "position": "student",
+                    "phone": "8282835823"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Ajanta Ghosh",
+                    "department": "IT",
+                    "phone": "9863405700"
+                },
+                {
+                    "name": "Anik Paul",
+                    "department": "CSE",
+                    "phone": "9126426769"
+                },
+                {
+                    "name": "Pritam Dey",
+                    "department": "IT",
+                    "phone": "7602962928"
+                },
+                {
+                    "name": "Shreya Saha",
+                    "department": "CSE",
+                    "phone": "7595983736"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "PASSION WITH REELS",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Rikhiya Dhar",
+                    "position": "faculty",
+                    "phone": "9433434625"
+                },
+                {
+                    "name": "Dr. Susmita Biswas",
+                    "position": "faculty",
+                    "phone": "8240430062"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Dipayan Sil",
+                    "department": "BBA",
+                    "position": "student",
+                    "phone": "7044444750"
+                },
+                {
+                    "name": "Aritri Dey",
+                    "department": "CSE",
+                    "position": "student",
+                    "phone": "9333327911"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Pranay Chatterjee",
+                    "department": "ECE",
+                    "phone": "9163978486"
+                },
+                {
+                    "name": "Soumi Maji",
+                    "department": "CSE",
+                    "phone": "8597607718"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "SHUTTER FUSION",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Arghadeep Chatterjee",
+                    "position": "faculty",
+                    "phone": "8777681148"
+                },
+                {
+                    "name": "Mr. Sayantan Chakraborty",
+                    "position": "faculty",
+                    "phone": "9830935915"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Debarjun Simlai",
+                    "department": "IT",
+                    "position": "student coordinator",
+                    "phone": "6290623382"
+                },
+                {
+                    "name": "Sumon Saha",
+                    "department": "BCA",
+                    "position": "student coordinator",
+                    "phone": "8638534726"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Chandrasish Bhattacharya(CORE)",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "7439476561"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "TECHNOMANIA",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Susmita Dey",
+                    "position": "faculty",
+                    "phone": "9674307923"
+                },
+                {
+                    "name": "Mr. Amartya Dutta",
+                    "position": "faculty",
+                    "phone": "9432274440"
+                },
+                {
+                    "name": "Mr. Debasish Sharma",
+                    "position": "faculty",
+                    "phone": "9831602663"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Priyabrata Sahu",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "7908335993"
+                },
+                {
+                    "name": "Sarat Menon",
+                    "department": "IT",
+                    "position": "student coordinator",
+                    "phone": "9874484490"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Shivam Kumar",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "7858084248"
+                },
+                {
+                    "name": "Samadrita Saha",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "9339241263"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "TECH - HUNT",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Sibasis Senapati",
+                    "position": "faculty",
+                    "phone": "9433255867"
+                },
+                {
+                    "name": "Dr. Debarati Dey (Roy)",
+                    "position": "faculty",
+                    "phone": "9433987024"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Rani Singh",
+                    "department": "CSE",
+                    "position": "student coordinator",
+                    "phone": "8420543454"
+                },
+                {
+                    "name": "Debangshi Biswas",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "8334082620"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Soumili Saha",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "9333270908"
+                },
+                {
+                    "name": "Sayan KangshaBanik",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "7980033005"
+                },
+                {
+                    "name": "Aharna Chatterjee",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "8240616604"
+                },
+                {
+                    "name": "Sayan Kumar Ghosh",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": ""
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "FIFA (CONSOLE)",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Asim Kumar Panda",
+                    "position": "faculty",
+                    "phone": "9831238884"
+                },
+                {
+                    "name": "Mr. Joy Roy",
+                    "position": "faculty",
+                    "phone": "9830035207"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Shubhradip Saha",
+                    "department": "CSE",
+                    "position": "student coordinator",
+                    "phone": "8910382335"
+                },
+                {
+                    "name": "Lakshya Yadav",
+                    "department": "BBA",
+                    "position": "student coordinator",
+                    "phone": "8450058348"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Gaurav Kumar Chaudhary",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "9798423849"
+                },
+                {
+                    "name": "Rohit Kumar Mahato",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "9163752205"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "PES (MOBILE)",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Sayantan Chakraborty",
+                    "position": "faculty",
+                    "phone": "9830935915"
+                },
+                {
+                    "name": "Mr. Proshanta Sarkar",
+                    "position": "faculty",
+                    "phone": "9836576617"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Subrata Bauri",
+                    "department": "IT",
+                    "position": "student coordinator",
+                    "phone": "7477558802"
+                },
+                {
+                    "name": "Abir Shee",
+                    "department": "CSE",
+                    "position": "student coordinator",
+                    "phone": "7585073011"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Aniket De",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "9038903850"
+                },
+                {
+                    "name": "Srijit Pal(CORE)",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "9073800392"
+                },
+                {
+                    "name": "Snigdha Sadhu",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "6296892124"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "RO - NAVIGATOR",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Ramesh Kumar",
+                    "position": "faculty",
+                    "phone": "7074218296"
+                },
+                {
+                    "name": "Mr. Debasish Sharma",
+                    "position": "faculty",
+                    "phone": "9831602663"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Parna Chakraborty",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "9073334220"
+                },
+                {
+                    "name": "Satadru Jana",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "7029947356"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Bapan Banik",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "9749201540"
+                },
+                {
+                    "name": "Harsh Singh",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "8697778712"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "RO - SOCCER",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Argha Kamal Pal",
+                    "position": "faculty",
+                    "phone": "8961109058"
+                },
+                {
+                    "name": "Mr. Ranjit Kumar Paul",
+                    "position": "faculty",
+                    "phone": "9903642105"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Mayuk Mitra",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "9775125004"
+                },
+                {
+                    "name": "Srijan Manna",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "8697727177"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Prantik Ghosh",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "7890838048"
+                },
+                {
+                    "name": "Somnath Chakraboarty(CORE)",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "8902211316"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "RO - TERRANCE",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Arindrajit Chaudhury",
+                    "position": "faculty",
+                    "phone": "9233284047"
+                },
+                {
+                    "name": "Mr. Aritra Ghosh",
+                    "position": "faculty",
+                    "phone": "9836961573"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Sabuj Bhattacharya",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "6289972373"
+                },
+                {
+                    "name": "Aman Alam",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "9693314908"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Madhurima Roy",
+                    "department": "BCA",
+                    "position": "volunteer",
+                    "phone": "6294245592"
+                },
+                {
+                    "name": "Krishna Kali Sarkar",
+                    "department": "EE",
+                    "position": "volunteer",
+                    "phone": "9874837413"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "RO - COMBAT",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Mr. Subhasish Das",
+                    "position": "faculty",
+                    "phone": "9038796596"
+                },
+                {
+                    "name": "Mr. Ranjit Kumar Paul",
+                    "position": "faculty",
+                    "phone": "9903642105"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Soumil Majumdar",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "9153033028"
+                },
+                {
+                    "name": "Debosmita Paul (CORE)",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "7003637202"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Sumit Ghosh",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "9749645061"
+                },
+                {
+                    "name": "Sougata Roy Chowdhury (CORE)",
+                    "department": "EE",
+                    "position": "volunteer",
+                    "phone": "8512969534"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "AQUA RACE",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Binoy Krishna Biswas",
+                    "position": "faculty",
+                    "phone": "9735355597"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Rahul Debnath",
+                    "department": "CSE",
+                    "position": "student coordinator",
+                    "phone": "7439316249"
+                },
+                {
+                    "name": "Debjeet Kumar Patoa",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "9101414850"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Srijan Seal",
+                    "department": "EE",
+                    "position": "volunteer",
+                    "phone": "8100267328"
+                },
+                {
+                    "name": "Gaurav Thakur",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "8789932151"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "KHET",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Ms. Ankita Indu",
+                    "position": "faculty",
+                    "phone": "9874776275"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Yash Kumar Singh",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "8777815524"
+                },
+                {
+                    "name": "Anuska Saha",
+                    "department": "ECE",
+                    "position": "student coordinator",
+                    "phone": "9674270655"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Debadrito Saha",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "8100390927"
+                },
+                {
+                    "name": "Ishani Saha (Co- SCP)",
+                    "department": "EE",
+                    "position": "volunteer",
+                    "phone": "9831359892"
+                }
+            ]
+        }
+    },
+    {
+        "teamName": "SCHOOL CONNECT PROGRAM",
+        "members": {
+            "faculty": [
+                {
+                    "name": "Dr. Surajit Mandal",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                }
+            ],
+            "student": [
+                {
+                    "name": "Ishani Saha",
+                    "department": "EE",
+                    "position": "student coordinator",
+                    "phone": "9831359892"
+                },
+                {
+                    "name": "Nausheen Qaiyum",
+                    "department": "MCA",
+                    "position": "student coordinator",
+                    "phone": "8583052045"
+                },
+                {
+                    "name": "Shirodhrit Bhowmik (CORE)",
+                    "department": "IT",
+                    "position": "student coordinator",
+                    "phone": "8420465695"
+                }
+            ],
+            "volunteer": [
+                {
+                    "name": "Dipayan Sil (Co- PWR)",
+                    "department": "BBA",
+                    "position": "volunteer",
+                    "phone": "7044444750"
+                },
+                {
+                    "name": "Ambapali Dutta",
+                    "department": "IT",
+                    "position": "volunteer",
+                    "phone": "7029857113"
+                },
+                {
+                    "name": "Shrutikana Das (CORE)",
+                    "department": "CSE",
+                    "position": "volunteer",
+                    "phone": "9123033239"
+                },
+                {
+                    "name": "Somnath Chakraborty (CORE)",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "8902211316"
+                },
+                {
+                    "name": "Debangshi Biswas (Co- Tech Hunt)",
+                    "department": "EE",
+                    "position": "volunteer",
+                    "phone": "8334082620"
+                },
+                {
+                    "name": "Rupsa Guha Roy (CORE)",
+                    "department": "BCA",
+                    "position": "volunteer",
+                    "phone": "9007632382"
+                },
+                {
+                    "name": "Yash Kumar Singh (Co-Khet)",
+                    "department": "ECE",
+                    "position": "volunteer",
+                    "phone": "8777815524"
+                }
+            ]
+        }
     },
 ];
