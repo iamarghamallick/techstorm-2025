@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Gallery() {
     return (
-        <main className="mt-16 md:mt-24 gallery-container min-h-screen flex flex-col justify-center items-center p-2 md:p-8 py-8">
+        <main className="mt-16 md:mt-24 gallery-container min-h-screen flex flex-col items-center p-2 md:p-8 py-8">
             <div className="container">
                 <h1 className={`${poppins.className} text-4xl text-center text-white font-bold`}>Gallery</h1>
                 <p className={`${righteous.className} text-gray-400 text-center px-2`}>Glimpses from TechStorm 2.24</p>
