@@ -2,7 +2,7 @@ export const khet = {
     id: 6,
     link_title: "khet",
     title: "KHET",
-    bgImage: "/assets/events/event11.png",
+    bgImage: "/assets/events/Khet.png",
     icon: "/assets/events/icons/event11.svg",
     description: "The Laser Game KHET 2.0: Mind-blowing laser fun for players ages 9-99. Using simple rules that can be learned in minutes, players alternate turns moving Egyptian-themed mirrored pieces, then fire their REAL (eye-safe) laser with the goal of blasting their opponent's PHARAOH to win. BASIC GEOMETRICAL CONCEPT IS THE KEY FACTOR IN THIS GAME.",
 

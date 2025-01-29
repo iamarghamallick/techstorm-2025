@@ -2,7 +2,7 @@ export const omegatrix = {
     id: 13,
     link_title: "omegatrix",
     title: "Omegatrix",
-    bgImage: "/assets/events/event18.png",
+    bgImage: "/assets/events/Omegatrix.png",
     icon: "/assets/events/icons/event18.svg",
     description: "A dynamic mathematics and reasoning event crafted to ignite your curiosity and sharpen your problem-solving skills! With captivating puzzles, stimulating questions, and an exciting touch of AI/ML, this challenge promises to engage your mind. Open to students of all year. Join us, and let’s unlock the power of your mind!",
 

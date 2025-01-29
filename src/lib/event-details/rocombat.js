@@ -2,7 +2,7 @@ export const rocombat = {
     id: 5,
     link_title: "rocombat",
     title: "Ro-Combat",
-    bgImage: "/assets/events/event10.png",
+    bgImage: "/assets/events/ROCombat.jpg",
     icon: "/assets/events/icons/event10.svg",
     description: "Ro-combat is an event where two huge metal masses clash together till an ultimatum. Bots are all manually operated and must be controlled wirelessly; no wired bots will be allowed.",
 

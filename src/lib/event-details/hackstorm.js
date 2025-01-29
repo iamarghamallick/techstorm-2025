@@ -2,7 +2,7 @@ export const hackstorm = {
     id: 8,
     link_title: "hack-storm",
     title: "Hack Storm",
-    bgImage: "/assets/events/event13.png",
+    bgImage: "/assets/events/HackStorm.jpg",
     icon: "/assets/events/icons/event13.svg",
     description: "Hack Storm is an exciting event where students can present their ideas or solutions using websites or apps based on given problem statements or their own concepts. Participants are encouraged to address real-world challenges and create impactful, innovative solutions to showcase their creativity, technical skills, and problem-solving abilities.",
 

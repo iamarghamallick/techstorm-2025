@@ -2,7 +2,7 @@ export const aquarace = {
     id: 7,
     link_title: "aqua-race",
     title: "Aqua Race",
-    bgImage: "/assets/events/event12.png",
+    bgImage: "/assets/events/AquaRace.jpg",
     icon: "/assets/events/icons/event12.svg",
     description: "Aqua race is an event where participants build a manually controlled boat to sail through obstacles in the arena. The boat should be wireless and powered by batteries, and the goal is to complete the race track in the minimum time to win.",
 

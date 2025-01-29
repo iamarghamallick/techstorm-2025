@@ -2,7 +2,7 @@ export const shutterfusion = {
     id: 9,
     link_title: "shutter-fusion",
     title: "Shutter Fusion",
-    bgImage: "/assets/events/event14.png",
+    bgImage: "/assets/events/ShutterFusion.jpg",
     icon: "/assets/events/icons/event14.svg",
     description: "'Shutter Fusion' is an exhilarating photography event where creativity meets technology! Showcase your talent by capturing stunning moments that blend innovation, art, and storytelling. Open to all photography enthusiasts, this competition celebrates unique perspectives and technical mastery. Join us to freeze time and craft memories that inspire and amaze!",
 

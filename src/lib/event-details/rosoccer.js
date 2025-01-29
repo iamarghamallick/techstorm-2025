@@ -2,7 +2,7 @@ export const rosoccer = {
     id: 14,
     link_title: "ro-soccer",
     title: "Ro-Soccer",
-    bgImage: "/assets/events/event19.png",
+    bgImage: "/assets/events/RoSoccer.jpg",
     icon: "/assets/events/icons/event19.svg",
     description: "Get ready for the ULTIMATE showdown in RO SOCCER! Two powerful robots, designed and controlled by brilliant minds, clash in an electrifying 1v1 battle. Watch as they unleash speed, agility, and precision to outsmart their rival and score the winning goal. Witness the thrill, strategy, and intensity of this robotic duel—don’t miss the action!",
 
