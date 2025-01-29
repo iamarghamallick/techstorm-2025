@@ -1,6 +1,6 @@
 export const rosoccer = {
     id: 14,
-    link_title: "ro-soccer",
+    link_title: "rosoccer",
     title: "Ro-Soccer",
     bgImage: "/assets/events/RoSoccer.jpg",
     icon: "/assets/events/icons/event19.svg",

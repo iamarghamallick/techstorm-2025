@@ -1,6 +1,6 @@
 export const fifa = {
     id: 15,
-    link_title: "fifa-console",
+    link_title: "fifa",
     title: "FIFA (Console)",
     bgImage: "/assets/events/Fifa.png",
     icon: "/assets/events/icons/event20.svg",

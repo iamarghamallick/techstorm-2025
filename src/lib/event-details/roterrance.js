@@ -1,6 +1,6 @@
 export const roterrance = {
     id: 15,
-    link_title: "ro-terrance",
+    link_title: "roterrance",
     title: "Ro-Terrance",
     bgImage: "/assets/events/RoTerrance.jpg",
     icon: "/assets/events/icons/event20.svg",

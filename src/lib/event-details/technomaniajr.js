@@ -1,7 +1,7 @@
 export const technomaniajr = {
     id: 12,
-    link_title: "technomaniajunior",
-    title: "Technomania Junior",
+    link_title: "technomaniajr",
+    title: "Techno Mania Junior",
     bgImage: "/assets/events/event17.png",
     icon: "/assets/events/icons/event17.svg",
     description: "It is a student-centered competition providing you a unique opportunity to showcase your innovation skills in hardware/physical model design in any area of science and technology towards achieving sustainable development Goals.",

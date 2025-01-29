@@ -24,6 +24,7 @@ const Hero = () => {
                         mixBlendMode: 'color-dodge',
                         filter: 'drop-shadow(2px 3px 2px white)'
                     }}
+                    priority
                 />
 
                 <div className="flex w-full items-center">
@@ -31,15 +32,16 @@ const Hero = () => {
                         initial={{ opacity: 0, x: "100px" }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 3 }}
-                        src='/assets/hero/25.svg'
+                        src='/assets/hero/2-25.svg'
                         alt='25'
                         width={334}
                         height={176}
-                        className='w-5/12 md:w-3/12'
+                        className='w-5/12 md:w-5/12'
                         style={{
                             mixBlendMode: 'color-dodge',
                             filter: 'drop-shadow(2px 3px 2px white)'
                         }}
+                        priority
                     />
                 </div>
 

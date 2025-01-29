@@ -1,6 +1,6 @@
 export const hackstormjr = {
     id: 10,
-    link_title: "illumizen",
+    link_title: "hackstormjr",
     title: "illumIZen",
     bgImage: "/assets/events/event15.png",
     icon: "/assets/events/icons/event15.svg",

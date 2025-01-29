@@ -1,3 +1,3 @@
 export function toLinkText(str) {
-    return str.toLowerCase().replace(/\s+/g, '');
+    return str.toLowerCase().replace(/\s+|-/g, '');
 }

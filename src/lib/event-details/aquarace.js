@@ -1,6 +1,6 @@
 export const aquarace = {
     id: 7,
-    link_title: "aqua-race",
+    link_title: "aquarace",
     title: "Aqua Race",
     bgImage: "/assets/events/AquaRace.jpg",
     icon: "/assets/events/icons/event12.svg",

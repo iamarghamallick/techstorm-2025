@@ -1,7 +1,7 @@
 export const technomania = {
     id: 15,
     link_title: "technomania",
-    title: "Technomania",
+    title: "Techno Mania",
     bgImage: "/assets/events/event20.png",
     icon: "/assets/events/icons/event20.svg",
     description: "To be notified.",

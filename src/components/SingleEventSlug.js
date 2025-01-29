@@ -28,6 +28,15 @@ const SingleEventSlug = ({ slug }) => {
         }
     }, []);
 
+    useEffect(() => {
+        const container = document.getElementById("event-content");
+        const image = document.getElementById("event-bg-image");
+        if (container && image) {
+            image.style.height = `${container.offsetHeight}px`;
+        }
+    }, [])
+
+
     return (
         <div className='container px-2'>
             {isValidSlug && currEvent && <div>
@@ -36,15 +45,9 @@ const SingleEventSlug = ({ slug }) => {
                         initial={{ opacity: 0, y: "100px" }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="md:w-1/3 relative"
+                        className="md:w-1/3 h-80 md:h-auto relative rounded-t-3xl md:rounded-tl-3xl"
+                        style={{ backgroundImage: `url(${currEvent.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
-                        <Image
-                            src={currEvent.bgImage}
-                            alt={currEvent.title + " pic"}
-                            width={400}
-                            height={300}
-                            className="w-full h-full object-cover rounded-t-3xl md:rounded-tl-3xl"
-                        />
                         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#1e1336] to-transparent rounded-t-3xl md:rounded-tl-3xl"></div>
                         <h1 className={`${righteous.className} md:hidden absolute bottom-0 left-0 text-4xl font-bold`}>{currEvent.title}</h1>
                     </motion.div>
@@ -54,6 +57,7 @@ const SingleEventSlug = ({ slug }) => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 flex flex-col gap-4"
+                        id='event-content'
                     >
                         <h1 className={`${righteous.className} hidden md:block text-3xl font-bold`}>{currEvent.title}</h1>
                         <p className={`${poppins.className} px-2 text-xs md:text-base`}>{currEvent.description}</p>
@@ -105,11 +109,17 @@ const SingleEventSlug = ({ slug }) => {
                         </div>
 
                         <Link
-                            href={currEvent.registrationLink}
-                            target="_blank"
-                            className={`${poppins.className} w-full text-center uppercase bg-[#202020] rounded-lg text-green-300 font-semibold text-xl p-2 border border-green-300 transition-transform transform hover:scale-[1.02] hover:bg-green-300 hover:text-[#202020]`}
+                            href={currEvent.registrationLink || "#"}
+                            target={currEvent.registrationLink ? "_blank" : undefined}
+                            className={`${poppins.className} ${currEvent.registrationLink
+                                ? "text-xl text-green-300 hover:scale-[1.02] hover:bg-green-300 hover:text-[#202020]"
+                                : "text-base text-gray-300 pointer-events-none opacity-50"
+                                } w-full text-center uppercase bg-[#202020] rounded-lg font-semibold p-2 border border-green-300 transition-transform transform`}
+                            onClick={(e) => {
+                                if (!currEvent.registrationLink) e.preventDefault();
+                            }}
                         >
-                            Register Now!
+                            {currEvent.registrationLink === "" ? "Registration Opening Soon" : "Register Now!"}
                         </Link>
                     </motion.div>
                 </div>

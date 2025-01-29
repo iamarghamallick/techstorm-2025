@@ -27,6 +27,31 @@ const LetterGlitch = ({
     '4', '5', '6', '7', '8', '9'
   ];
 
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    context.current = canvas.getContext('2d');
+
+    setTimeout(() => {
+      resizeCanvas();
+      animate();
+    }, 0); // Ensures execution after the component mounts
+
+    let resizeTimeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(resizeCanvas, 100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      cancelAnimationFrame(animationRef.current);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [glitchColors, glitchSpeed, smooth]);
+
   const getRandomChar = () => {
     return lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)];
   };
@@ -77,16 +102,14 @@ const LetterGlitch = ({
 
   const resizeCanvas = () => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    const parent = canvas.parentElement;
-    if (!parent) return;
+    if (!canvas || !canvas.parentElement) return;
 
+    const parent = canvas.parentElement;
     const dpr = window.devicePixelRatio || 1;
     const rect = parent.getBoundingClientRect();
 
     canvas.width = rect.width * dpr;
     canvas.height = rect.height * dpr;
-
     canvas.style.width = `${rect.width}px`;
     canvas.style.height = `${rect.height}px`;
 
@@ -100,9 +123,12 @@ const LetterGlitch = ({
   };
 
   const drawLetters = () => {
-    if (!context.current || letters.current.length === 0) return;
+    if (!canvasRef.current || !context.current || letters.current.length === 0) return;
+
     const ctx = context.current;
-    const { width, height } = canvasRef.current.getBoundingClientRect();
+    const canvas = canvasRef.current;
+    const { width, height } = canvas.getBoundingClientRect();
+
     ctx.clearRect(0, 0, width, height);
     ctx.font = `${fontSize}px monospace`;
     ctx.textBaseline = 'top';

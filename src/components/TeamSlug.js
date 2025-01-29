@@ -45,11 +45,11 @@ const TeamSlug = ({ slug }) => {
 
                     {allTeams.map((team, index) => (
                         <div key={index} className={`${index === 0 ? "hidden" : ""} flex justify-between gap-2 p-4 my-4 border-t border-white`}>
-                            <h1 className={`${poppins.className} uppercase text-lg md:text-xl font-semibold`}>{team.teamName}</h1>
-                            <div className="flex flex-col gap-2">
+                            <h1 className={`${poppins.className} uppercase text-sm md:text-xl font-semibold`}>{team.teamName}</h1>
+                            <div className="flex flex-col gap-1 md:gap-2">
                                 {Array.isArray(team.members[slug]) && team.members[slug].length > 0 ? (
                                     team.members[slug].map((member, index) => (
-                                        <h1 key={index} className={`${poppins.className} text-right text-lg md:text-xl`}>
+                                        <h1 key={index} className={`${poppins.className} text-right text-sm md:text-xl`}>
                                             {member.name}
                                         </h1>
                                     ))

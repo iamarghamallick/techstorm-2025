@@ -8,8 +8,8 @@ export const techhunt = {
 
     registrationLink: "",
     prize: "Exciting Prizes",
-    bppimtRegFees: "Coming Soon",
-    outsideRegFees: "Coming Soon",
+    bppimtRegFees: "TBD",
+    outsideRegFees: "TBD",
     onspotReg: "Available",
 
     prelimsDate: "Coming Soon",

@@ -7,21 +7,22 @@ import { toLinkText } from '@/utils/toLinkText';
 
 const AnimatedLink = motion(Link);
 
-const EventCategoryCard = ({ title, icon, image }) => {
+const EventCategoryCard = ({ active, title, icon, image }) => {
     return (
         <AnimatedLink
             initial={{ opacity: 0, y: "50px" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             href={"/events/" + toLinkText(title)}
-            className="group w-full h-60 md:h-96 shadow-lg overflow-hidden relative rounded-lg block transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            className={`group w-full h-52 md:h-80 shadow-lg overflow-hidden relative rounded-lg block transform transition duration-300 ${active ? "hover:scale-105 hover:shadow-2xl" : ""}`}
+            aria-disabled={active}
         >
             <Image
                 src={image}
                 alt={title}
                 width={3000}
                 height={4000}
-                className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-110 group-hover:opacity-80"
+                className={`w-full h-full object-cover rounded-lg transition-transform duration-300 ${active ? "group-hover:scale-105 group-hover:opacity-80" : ""}`}
             />
             {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-black to-transparent opacity-90 transition-opacity duration-300"></div>
@@ -33,9 +34,9 @@ const EventCategoryCard = ({ title, icon, image }) => {
                         alt={title}
                         width={100}
                         height={100}
-                        className="md:w-44 md:h-44 transition-transform duration-300 group-hover:scale-125"
+                        className={`md:w-44 md:h-44 transition-transform duration-300 ${active ? "group-hover:scale-110" : ""}`}
                     />
-                    <p className="font-ribes text-4xl md:text-6xl font-semibold text-white text-center transition-transform duration-300 group-hover:translate-y-2 group-hover:scale-110">
+                    <p className={`font-ribes text-4xl md:text-5xl font-semibold text-white text-center transition-transform duration-300 ${active ? "group-hover:translate-y-2 group-hover:scale-105" : ""}`}>
                         {title}
                     </p>
                 </div>

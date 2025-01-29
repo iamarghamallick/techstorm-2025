@@ -7,13 +7,12 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiLinkedin } from "react-icons/fi";
 import LetterGlitch from './ReactBits/LetterGlitch';
-import PixelCard from './ReactBits/PixelCard';
 
-const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_image }) => {
+const MemberCard = ({ index, name, position, team, image, linkedin, bg_image }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: "30px" }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className={`${index === 25 ? "" : ""} group flex flex-col justify-between items-center m-auto p-2 rounded-xl bg-[#171717] my-2 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}
         >
@@ -50,6 +49,7 @@ const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_
                     height={300}
                     alt={"Pic of " + name}
                     className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-105 relative z-10"
+                    priority
                 />
 
                 {/* LinkedIn Button */}

@@ -1,6 +1,6 @@
 export const codebeejr = {
     id: 11,
-    link_title: "codebeejunior",
+    link_title: "codebeejr",
     title: "Code Bee Junior",
     bgImage: "/assets/events/event16.png",
     icon: "/assets/events/icons/event16.svg",

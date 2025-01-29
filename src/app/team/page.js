@@ -12,7 +12,7 @@ export default function Team() {
                 {/* Core Team Members  */}
                 <div className="grid grid-cols-2 md:grid-cols-5 my-2 gap-1 md:gap-2">
                     {allTeams[0].members.map((card, index) => (
-                        <MemberCard key={index} index={index} name={card.name} image={card.image} position={card.position} team={card.team} bgcolor={card.bgcolor} linkedin={card.linkedin} bg_image={card.bg_image} />
+                        <MemberCard key={index} index={index} name={card.name} image={card.image} position={card.position} team={card.team} linkedin={card.linkedin} bg_image={card.bg_image} />
                     ))}
                 </div>
 

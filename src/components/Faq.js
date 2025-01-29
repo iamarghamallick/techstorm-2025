@@ -4,26 +4,12 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { motion } from "framer-motion";
+import { faqs } from "@/lib/faqs";
 
 const AnimatedImage = motion(Image);
 
 const Faq = () => {
     const [openIndex, setOpenIndex] = useState(0);
-
-    const faqData = [
-        {
-            question: "How do I register?",
-            answer: "You can go to event page in the website and choose the event of your liking to register."
-        },
-        {
-            question: "How do I register?",
-            answer: "You can go to event page in the website and choose the event of your liking to register."
-        },
-        {
-            question: "How do I register?",
-            answer: "You can go to event page in the website and choose the event of your liking to register."
-        },
-    ];
 
     const toggleAccordion = (index) => setOpenIndex(openIndex === index ? -1 : index);
 
@@ -58,7 +44,7 @@ const Faq = () => {
                     transition={{ duration: 1 }}
                     className="space-y-4"
                 >
-                    {faqData.map((faq, index) => (
+                    {faqs.map((faq, index) => (
                         <div key={index} className="overflow-hidden">
                             <button
                                 className="w-full px-6 py-4 flex justify-between items-center bg-[#3F3F3F] hover:bg-[#272727] transition-colors duration-200 rounded-lg"
@@ -66,7 +52,7 @@ const Faq = () => {
                                 aria-expanded={openIndex === index}
                                 aria-controls={`content-${index}`}
                             >
-                                <span className={`${inter.className} text-lg md:only:text-xl text-white`}>{faq.question}</span>
+                                <span className={`${inter.className} text-lg md:only:text-xl text-left text-white`}>{faq.question}</span>
                                 <IoIosArrowDropdown
                                     className={`w-6 h-6 text-white transform transition-transform duration-200 ${openIndex === index ? "rotate-180" : ""}`}
                                 />
@@ -76,7 +62,7 @@ const Faq = () => {
                                 className={`transition-all duration-200 ease-in-out ${openIndex === index ? "max-h-48 opacity-100" : "max-h-0 opacity-0"} overflow-hidden`}
                             >
                                 <div className="px-6 py-4 bg-transparent">
-                                    <p className={`${actor.className} text-white text-xl md:text-2xl`}>{faq.answer}</p>
+                                    <p className={`${actor.className} text-white text-lg md:text-xl`}>{faq.answer}</p>
                                 </div>
                             </div>
                         </div>

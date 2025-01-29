@@ -26,14 +26,14 @@ export default function Gallery() {
                                 alt="gallery pic"
                                 width={400}
                                 height={300}
-                                className="aspect-square object-cover w-full h-full rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110 grayscale group-hover:filter-none"
+                                className="aspect-square object-cover w-full h-full rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-105 grayscale group-hover:filter-none"
                             />
 
                             {/* Overlay effect */}
                             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
 
                             {/* Title Badge */}
-                            <span className="absolute top-4 right-4 bg-gray-800/80 rounded-lg px-4 py-2 text-white text-sm font-semibold transition-transform duration-500 group-hover:scale-110 group-hover:translate-y-1">
+                            <span className="absolute top-2 md:top-4 right-2 md:right-4 bg-gray-800/80 rounded-lg px-4 py-2 text-white text-xs md:text-sm font-semibold transition-transform duration-500 group-hover:scale-105 group-hover:translate-y-1">
                                 {item.title}
                             </span>
 
@@ -42,7 +42,7 @@ export default function Gallery() {
 
                             {/* Floating techy overlay */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                <span className="text-indigo-500 text-3xl font-bold animate-bounce">⚡</span>
+                                <span className="text-indigo-500 text-xl md:text-2xl font-bold animate-bounce">⚡</span>
                             </div>
                         </motion.div>
                     ))}

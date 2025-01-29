@@ -1,6 +1,6 @@
 export const efootball = {
     id: 2,
-    link_title: "pesmobile",
+    link_title: "efootball",
     title: "PES (Mobile)",
     bgImage: "/assets/events/PES.jpg",
     icon: "/assets/events/icons/event7.svg",

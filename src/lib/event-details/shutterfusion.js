@@ -1,6 +1,6 @@
 export const shutterfusion = {
     id: 9,
-    link_title: "shutter-fusion",
+    link_title: "shutterfusion",
     title: "Shutter Fusion",
     bgImage: "/assets/events/ShutterFusion.jpg",
     icon: "/assets/events/icons/event14.svg",
