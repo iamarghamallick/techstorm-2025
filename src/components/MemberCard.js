@@ -6,6 +6,8 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiLinkedin } from "react-icons/fi";
+import LetterGlitch from './ReactBits/LetterGlitch';
+import PixelCard from './ReactBits/PixelCard';
 
 const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_image }) => {
     return (
@@ -17,14 +19,37 @@ const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_
         >
             {/* Image Container */}
             <div
-                className="w-full aspect-square rounded-xl flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover:rotate-0 group-hover:scale-[1.01] relative"
+                className="w-full aspect-square rounded-xl flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover:rotate-0 relative"
             >
+                {/* Black-and-white background image */}
+                <div className="absolute inset-0 w-full h-full">
+                    <div
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
+                        style={{
+                            backgroundImage: `url(${bg_image})`,
+                        }}
+                    ></div>
+                    <div className="absolute inset-0 bg-black opacity-50"></div>
+                </div>
+
+                {/* Letter Glitch */}
+                <div className='absolute inset-0 w-full h-full opacity-50'>
+                    <LetterGlitch
+                        glitchColors={["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"]}
+                        glitchSpeed={100}
+                        centerVignette={true}
+                        outerVignette={true}
+                        smooth={true}
+                    />
+                </div>
+
+                {/* Main Image */}
                 <Image
                     src={image}
                     width={300}
                     height={300}
                     alt={"Pic of " + name}
-                    className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-[1.01]"
+                    className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-105 relative z-10"
                 />
 
                 {/* LinkedIn Button */}
@@ -32,7 +57,7 @@ const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_
                     href={linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute bottom-2 md:bottom-4 right-2 md:right-4 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md bg-white"
+                    className="absolute bottom-2 md:bottom-4 right-2 md:right-4 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md bg-white z-20"
                 >
                     <FiLinkedin color="blue" size={20} />
                 </Link>
@@ -41,7 +66,7 @@ const MemberCard = ({ index, name, position, team, image, bgcolor, linkedin, bg_
             {/* Text Section */}
             <div className="flex flex-col justify-center items-center">
                 <h2
-                    className={`${righteous.className} md:text-lg text-center text-white transition-transform duration-300 group-hover:translate-y-1 group-hover:scale-[1.01] leading-none py-1`}
+                    className={`${righteous.className} md:text-lg text-center text-white leading-none py-1`}
                 >
                     {name}
                 </h2>

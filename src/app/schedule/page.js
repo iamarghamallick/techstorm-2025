@@ -1,3 +1,4 @@
+import LetterGlitch from "@/components/ReactBits/LetterGlitch";
 import { poppins } from "../fonts";
 
 export default function Schedule() {

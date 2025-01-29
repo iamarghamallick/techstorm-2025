@@ -8,7 +8,7 @@ export const events = [
     {
         id: 1,
         title: "Brain Teasers",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/brain-teaser.png",
         image: "/assets/events/BrainTeaser.jpg",
         eventCount: 2,
         eventNames: ["techhunt", "omegatrix"],
@@ -16,7 +16,7 @@ export const events = [
     {
         id: 2,
         title: "Technicals",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/technicals.png",
         image: "/assets/events/Technicals.jpg",
         eventCount: 3,
         eventNames: ["codebee", "hackstorm", "technomania"],
@@ -24,7 +24,7 @@ export const events = [
     {
         id: 3,
         title: "Rovers",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/rovers.png",
         image: "/assets/events/Rovers.jpg",
         eventCount: 5,
         eventNames: ["rocombat", "ronavigator", "rosoccer", "roterrance", "aquarace"],
@@ -32,7 +32,7 @@ export const events = [
     {
         id: 4,
         title: "Games",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/games.png",
         image: "/assets/events/Gaming.jpg",
         eventCount: 3,
         eventNames: ["efootball", "fifa", "khet"],
@@ -40,7 +40,7 @@ export const events = [
     {
         id: 5,
         title: "Creative",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/creative.png",
         image: "/assets/events/Creative.jpg",
         eventCount: 2,
         eventNames: ["passionwithreels", "shutterfusion"],
@@ -48,7 +48,7 @@ export const events = [
     {
         id: 6,
         title: "School Connect",
-        icon: "/assets/events/icons/event1.svg",
+        icon: "/assets/events/icons/budding.png",
         image: "/assets/events/SchoolConnect.png",
         eventCount: 3,
         eventNames: ["codebeejr", "technomaniajr", "hackstormjr"],
