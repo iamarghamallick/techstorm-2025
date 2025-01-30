@@ -5,36 +5,44 @@ import Link from 'next/link'
 import React from 'react'
 import { GoLinkExternal } from "react-icons/go";
 import { motion } from 'framer-motion';
+import ImageWithSkeleton from './ImageWithSkeleton';
 
 const Gallery = () => {
     return (
-        <div className='p-2 py-8 my-8 flex flex-col md:flex-row gap-4 justify-center items-center md:h-[530px] relative'>
+        <div className='px-6 md:px-2 py-8 my-8 flex flex-col md:flex-row gap-4 justify-center items-center md:h-[530px] relative'>
 
             {/* bg effects: styled in /src/app/globals.css  */}
             {/* top center  */}
             <div className="home-bg-gallery-top md:hidden"></div>
 
             <motion.div
-                initial={{ opacity: 0, x: "-100px" }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 className='w-full md:w-2/5 md:h-full'
             >
-                <Image src='/assets/gallery/DSC_0307.JPG' alt='gallery-image-1' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square' />
+                <ImageWithSkeleton src='/assets/gallery/DSC_0307.JPG' alt='gallery-image-1' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square transition-colors duration-300 hover:filter-none' />
             </motion.div>
 
-            <div className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 gap-4 w-full md:w-[25%] md:h-full">
-                <Image src='/assets/gallery/IMG_8253.JPG' alt='gallery-image-2' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square' />
-                <Image src='/assets/gallery/IMG_7990.JPG' alt='gallery-image-3' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square' />
-            </div>
+            <motion.div
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="grid grid-cols-2 md:grid-cols-1 md:grid-rows-2 gap-4 w-full md:w-[25%] md:h-full"
+            >
+                <ImageWithSkeleton src='/assets/gallery/IMG_8253.JPG' alt='gallery-image-2' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square transition-colors duration-300 hover:filter-none' />
+                <ImageWithSkeleton src='/assets/gallery/IMG_7990.JPG' alt='gallery-image-3' width={4928} height={3264} className='grayscale w-full h-full object-cover rounded-lg aspect-square transition-colors duration-300 hover:filter-none' />
+            </motion.div>
 
             <motion.div
-                initial={{ opacity: 0, x: "100px" }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="md:grid md:grid-rows-3 gap-4 w-full md:w-[35%] md:h-full"
+                className="md:grid md:grid-rows-3 gap-4 w-full md:w-[35%] md:h-full row-span-2"
             >
-                <Image src='/assets/gallery/IMG_8144.JPG' alt='gallery-image-4' width={4928} height={3264} className='hidden md:block row-span-2 grayscale w-full h-full object-cover rounded-lg' />
+                <div className='hidden md:block row-span-2 grayscale w-full h-full object-cover rounded-lg'>
+                    <ImageWithSkeleton src='/assets/gallery/IMG_8144.JPG' alt='gallery-image-4' width={4928} height={3264} className='hidden md:block row-span-2 grayscale w-full h-full object-cover rounded-lg transition-colors duration-300 hover:filter-none' />
+                </div>
 
                 <Link
                     href='/gallery'

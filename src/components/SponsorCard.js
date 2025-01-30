@@ -3,17 +3,18 @@ import { righteous } from '@/app/fonts'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion';
+import ImageWithSkeleton from './ImageWithSkeleton';
 
 const SponsorCard = ({ title, image, category }) => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: "50px" }}
+            initial={{ opacity: 0, y: "30px" }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="group relative flex flex-col justify-between items-center m-auto p-2 md:p-6 rounded-xl bg-[#171717] md:my-4 shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
         >
             {/* Image with hover effects */}
-            <Image
+            <ImageWithSkeleton
                 src={image}
                 width={300}
                 height={300}

@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FiLinkedin } from "react-icons/fi";
 import LetterGlitch from './ReactBits/LetterGlitch';
+import ImageWithSkeleton from './ImageWithSkeleton';
 
 const MemberCard = ({ index, name, position, team, image, linkedin, bg_image }) => {
     return (
@@ -43,7 +44,7 @@ const MemberCard = ({ index, name, position, team, image, linkedin, bg_image }) 
                 </div>
 
                 {/* Main Image */}
-                <Image
+                <ImageWithSkeleton
                     src={image}
                     width={300}
                     height={300}
