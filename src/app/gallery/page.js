@@ -3,6 +3,7 @@ import { gallery } from "@/lib/gallery";
 import { poppins, righteous } from "../fonts";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ImageWithSkeleton from "@/components/ImageWithSkeleton";
 
 export default function Gallery() {
     return (
@@ -14,14 +15,14 @@ export default function Gallery() {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 my-8 md:px-8">
                     {gallery.map((item, index) => (
                         <motion.div
-                            initial={{ opacity: 0, y: "50px" }}
+                            initial={{ opacity: 0, y: "30px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                             key={index}
                             className="gallery-item mx-auto relative group overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl"
                         >
                             {/* Image with hover zoom and techy animation */}
-                            <Image
+                            <ImageWithSkeleton
                                 src={item.image}
                                 alt="gallery pic"
                                 width={400}

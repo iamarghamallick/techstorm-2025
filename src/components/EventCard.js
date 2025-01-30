@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
+import ImageWithSkeleton from './ImageWithSkeleton'
 
 const EventCard = ({ title, icon, image }) => {
     return (
         <div className="group min-w-[300px] max-w-[300px] h-[400px] shadow-lg overflow-hidden relative rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <Image
+            <ImageWithSkeleton
                 src={image}
                 alt={title}
                 width={3000}

@@ -26,8 +26,8 @@ const Faq = () => {
             <h1 className={`md:hidden font-ribes text-5xl text-white`}>FAQ&apos;s</h1>
 
             <AnimatedImage
-                initial={{ opacity: 0, x: "-100px" }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 src="/assets/faq/faq.svg"
                 alt="FAQ"
@@ -39,7 +39,7 @@ const Faq = () => {
             <div className="w-full md:w-1/2 mx-auto p-0 md:p-6 rounded-lg shadow-lg">
                 <h1 className={`hidden md:block font-ribes text-7xl text-white mb-8`}>FAQ&apos;s</h1>
                 <motion.div
-                    initial={{ opacity: 0, y: "100px" }}
+                    initial={{ opacity: 0, y: "30px" }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     className="space-y-4"

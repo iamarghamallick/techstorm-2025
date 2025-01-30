@@ -8,8 +8,8 @@ const Details = () => {
     return (
         <div className='p-2 py-8 my-12 flex flex-col md:flex-row gap-8 justify-center items-center'>
             <motion.div
-                initial={{ opacity: 0, x: "-100px" }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 className={`${righteous.className} date-time-container flex flex-col justify-center items-center relative pr-10 md:mr-10 md:w-[25%]`}
             >
@@ -34,15 +34,20 @@ const Details = () => {
                 </h1>
             </motion.div>
 
-            <div className='map-container rounded-xl w-full md:w-[35%] z-0'>
+            <motion.div
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className='map-container rounded-xl w-11/12 md:w-[35%] z-0'
+            >
                 <GoogleMap />
-            </div>
+            </motion.div>
 
             <motion.div
-                initial={{ opacity: 0, x: "100px" }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: "30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className={`${righteous.className} date-time-container flex flex-col gap-6 w-full md:w-[40%]`}
+                className={`${righteous.className} date-time-container flex flex-col gap-6 w-11/12 md:w-[40%]`}
             >
                 <h1 className="text-2xl text-left relative after:content-[''] after:block after:h-0.5 after:w-full after:border-t after:border-dotted after:border-white after:mt-4 after:mx-auto">VENUE</h1>
                 <h1 className='text-3xl md:text-5xl text-[#63B1FF]'>B. P. Poddar Institute of Management and Technology</h1>

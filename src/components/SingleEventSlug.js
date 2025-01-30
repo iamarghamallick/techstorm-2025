@@ -36,6 +36,16 @@ const SingleEventSlug = ({ slug }) => {
         }
     }, [])
 
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        if (!currEvent?.bgImage) return; // ✅ Prevents errors when currEvent is null
+        const img = document.createElement("img");
+        img.src = currEvent.bgImage;
+        img.onload = () => setLoading(false);
+    }, [currEvent?.bgImage]);
+
+    if (!currEvent) return null; // ✅ Early return if currEvent is not available
 
     return (
         <div className='container px-2'>
@@ -46,10 +56,32 @@ const SingleEventSlug = ({ slug }) => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         className="md:w-1/3 h-80 md:h-auto relative rounded-t-3xl md:rounded-tl-3xl"
-                        style={{ backgroundImage: `url(${currEvent.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
+                        {/* Skeleton Loader */}
+                        {loading && (
+                            <div className="absolute inset-0 animate-pulse bg-gray-300 rounded-t-3xl md:rounded-tl-3xl" />
+                        )}
+
+                        {/* Background Image */}
+                        <div
+                            className={`absolute inset-0 transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+                                }`}
+                            style={{
+                                backgroundImage: `url(${currEvent.bgImage})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                            }}
+                        />
+
+                        {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#1e1336] to-transparent rounded-t-3xl md:rounded-tl-3xl"></div>
-                        <h1 className={`${righteous.className} md:hidden absolute bottom-0 left-0 text-4xl font-bold`}>{currEvent.title}</h1>
+
+                        {/* Title */}
+                        <h1
+                            className={`${righteous.className} md:hidden absolute bottom-0 left-0 text-4xl font-bold`}
+                        >
+                            {currEvent.title}
+                        </h1>
                     </motion.div>
 
                     <motion.div

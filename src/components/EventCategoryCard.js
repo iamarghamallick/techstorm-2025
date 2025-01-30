@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { toLinkText } from '@/utils/toLinkText';
+import ImageWithSkeleton from './ImageWithSkeleton';
 
 const AnimatedLink = motion(Link);
 
@@ -17,7 +18,7 @@ const EventCategoryCard = ({ active, title, icon, image }) => {
             className={`group w-full h-52 md:h-80 shadow-lg overflow-hidden relative rounded-lg block transform transition duration-300 ${active ? "hover:scale-105 hover:shadow-2xl" : ""}`}
             aria-disabled={active}
         >
-            <Image
+            <ImageWithSkeleton
                 src={image}
                 alt={title}
                 width={3000}
