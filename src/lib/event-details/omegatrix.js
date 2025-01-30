@@ -3,14 +3,14 @@ export const omegatrix = {
     link_title: "omegatrix",
     title: "Omegatrix",
     bgImage: "/assets/events/Omegatrix.png",
-    icon: "/assets/events/icons/event18.svg",
+    icon: "/assets/events/icons/brain-teaser.png",
     description: "A dynamic mathematics and reasoning event crafted to ignite your curiosity and sharpen your problem-solving skills! With captivating puzzles, stimulating questions, and an exciting touch of AI/ML, this challenge promises to engage your mind. Open to students of all year. Join us, and let’s unlock the power of your mind!",
 
     registrationLink: "",
     prize: "Exciting Prizes",
-    bppimtRegFees: "No Registration Fee",
-    outsideRegFees: "No Registration Fee",
-    onspotReg: "Not Available",
+    bppimtRegFees: "TBD",
+    outsideRegFees: "TBD",
+    onspotReg: "TBD",
 
     prelimsDate: "Coming Soon",
     prelimsTiming: [

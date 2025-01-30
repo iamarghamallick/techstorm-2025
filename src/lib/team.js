@@ -1116,7 +1116,37 @@ export const allTeams = [
                     "name": "Dr. Surajit Mandal",
                     "position": "faculty",
                     "phone": "9474319621"
-                }
+                },
+                {
+                    "name": "Mr. Aritra Ghosh",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
+                {
+                    "name": "Mr. Subhasish Das",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
+                {
+                    "name": "Dr. Inadyuti Dutt",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
+                {
+                    "name": "Ms. Sudipta Roy",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
+                {
+                    "name": "Mr. Manishi Guha",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
+                {
+                    "name": "Dr. Rikhiya Dhar",
+                    "position": "faculty",
+                    "phone": "9474319621"
+                },
             ],
             "student": [
                 {

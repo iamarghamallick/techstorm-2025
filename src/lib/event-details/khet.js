@@ -3,14 +3,14 @@ export const khet = {
     link_title: "khet",
     title: "KHET",
     bgImage: "/assets/events/Khet.png",
-    icon: "/assets/events/icons/event11.svg",
+    icon: "/assets/events/icons/games.png",
     description: "The Laser Game KHET 2.0: Mind-blowing laser fun for players ages 9-99. Using simple rules that can be learned in minutes, players alternate turns moving Egyptian-themed mirrored pieces, then fire their REAL (eye-safe) laser with the goal of blasting their opponent's PHARAOH to win. BASIC GEOMETRICAL CONCEPT IS THE KEY FACTOR IN THIS GAME.",
 
     registrationLink: "",
     prize: "Exciting Prizes",
     bppimtRegFees: "Coming Soon",
     outsideRegFees: "Coming Soon",
-    onspotReg: "Available",
+    onspotReg: "TBD",
 
     prelimsDate: "Coming Soon",
     prelimsTiming: [
@@ -31,6 +31,16 @@ export const khet = {
                 "Team Size = SOLO PARTICIPATION.",
                 "Time taken for the PRELIMS I, PRELIMS II, Quarter final and semifinal = 15 mins.",
                 "Time taken for the FINALS = 20 mins."
+            ]
+        },
+        {
+            "heading": "Rules and Regulations",
+            "content": [
+                "PHARAOH: The Pharaoh is the most important piece for each side. If hit with a laser, it is destroyed and its owner loses the game. Similar to a king in chess, the Pharaoh pieces are comparatively weak, and so are often only moved if under duress.",
+                "SCARABS: Scarabs consist primarily of large, dual-sided mirrors. They reflect a laser coming in from any direction, and thus cannot be eliminated from the board. Also, unlike other pieces, Scarabs may move into an adjacent square even if it is already occupied, by switching places with the piece found there (whichever colour it may be). Thus, they are the most powerful pieces on the board but must be used with care, as a move that puts one side of the mirror in a favourable position may expose the player to attack using the opposite side of the same mirror.",
+                "SPHINXES: In KHET 2.0, the Sphinxes hold the lasers. They may not move (each player's is located at their closest right-hand corner) but may be rotated in place so as to fire down the rank instead of the file. A Sphinx is unaffected by laser fire, whether the opponent's or its own reflected back upon itself.",
+                "ANUBES: Anubis has the advantage that, despite still being unmirrored, they are not affected by a laser strike on the front; they must be hit on the sides or rear in order to be eliminated.",
+                "PYRAMIDS: Pyramids have a single diagonal mirror and form the primary mechanism for directing the path of the laser. They are vulnerable to a hit from two of the four sides and must be defended lest the player lose their ability to build paths of any size."
             ]
         },
         {
@@ -61,7 +71,7 @@ export const khet = {
             "heading": "POINTS TO BE NOTED",
             "content": [
                 "In any circumstances, if it’s found that there are odd number of participants, then the last participant based on the lottery may have to play with the volunteers in the PRELIMS I.",
-                "If there are more than 2 participants, some participants may get eliminated based on their scores and time taken even though they have won the round or they might have to play another round for tie-breaking after PRELIMS I."
+                "If there are more than 2^n participants, some participants may get eliminated based on their scores and time taken even though they have won the round or they might have to play another round for tie-breaking after PRELIMS I."
             ]
         },
         {

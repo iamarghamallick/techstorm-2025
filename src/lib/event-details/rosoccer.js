@@ -3,14 +3,14 @@ export const rosoccer = {
     link_title: "rosoccer",
     title: "Ro-Soccer",
     bgImage: "/assets/events/RoSoccer.jpg",
-    icon: "/assets/events/icons/event19.svg",
+    icon: "/assets/events/icons/rovers.png",
     description: "Get ready for the ULTIMATE showdown in RO SOCCER! Two powerful robots, designed and controlled by brilliant minds, clash in an electrifying 1v1 battle. Watch as they unleash speed, agility, and precision to outsmart their rival and score the winning goal. Witness the thrill, strategy, and intensity of this robotic duel—don’t miss the action!",
 
     registrationLink: "",
     prize: "Exciting Prizes",
-    bppimtRegFees: "No Registration Fee",
-    outsideRegFees: "No Registration Fee",
-    onspotReg: "Not Available",
+    bppimtRegFees: "TBD",
+    outsideRegFees: "TBD",
+    onspotReg: "TBD",
 
     prelimsDate: "Coming Soon",
     prelimsTiming: [

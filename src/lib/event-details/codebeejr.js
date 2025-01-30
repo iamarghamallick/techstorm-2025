@@ -2,8 +2,8 @@ export const codebeejr = {
     id: 11,
     link_title: "codebeejr",
     title: "Code Bee Junior",
-    bgImage: "/assets/events/event16.png",
-    icon: "/assets/events/icons/event16.svg",
+    bgImage: "/assets/events/CodeBeeJunior.jpg",
+    icon: "/assets/events/icons/budding.png",
     description: "Here is a chance to prove yourself that you are not only a programmer but also an elegant and efficient coder. Plunge in to unravel the deep Coding secrets and swim up to the shore with the best algorithm. Code Bee Junior is an offline coding event where the two upcoming rounds will give your mind a real twist and turn; so be ready to decode the trail.",
 
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfb2JyhdhJZgyrlmouS0O_3sppM33XkKT5obSOeXU3SYLchg/viewform",
