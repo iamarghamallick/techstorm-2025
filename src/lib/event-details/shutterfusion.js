@@ -3,14 +3,14 @@ export const shutterfusion = {
     link_title: "shutterfusion",
     title: "Shutter Fusion",
     bgImage: "/assets/events/ShutterFusion.jpg",
-    icon: "/assets/events/icons/event14.svg",
+    icon: "/assets/events/icons/creative.png",
     description: "'Shutter Fusion' is an exhilarating photography event where creativity meets technology! Showcase your talent by capturing stunning moments that blend innovation, art, and storytelling. Open to all photography enthusiasts, this competition celebrates unique perspectives and technical mastery. Join us to freeze time and craft memories that inspire and amaze!",
 
     registrationLink: "",
     prize: "Exciting Prizes",
     bppimtRegFees: "Coming Soon",
     outsideRegFees: "Coming Soon",
-    onspotReg: "Not Available",
+    onspotReg: "TBD",
 
     prelimsDate: "Coming Soon",
     prelimsTiming: [

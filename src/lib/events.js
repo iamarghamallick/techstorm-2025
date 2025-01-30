@@ -47,7 +47,7 @@ export const events = [
     },
     {
         id: 6,
-        title: "School Connect",
+        title: "Budding Genius",
         icon: "/assets/events/icons/budding.png",
         image: "/assets/events/SchoolConnect.png",
         eventCount: 3,

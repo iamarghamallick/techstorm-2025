@@ -3,14 +3,14 @@ export const rocombat = {
     link_title: "rocombat",
     title: "Ro-Combat",
     bgImage: "/assets/events/ROCombat.jpg",
-    icon: "/assets/events/icons/event10.svg",
+    icon: "/assets/events/icons/rovers.png",
     description: "Ro-combat is an event where two huge metal masses clash together till an ultimatum. Bots are all manually operated and must be controlled wirelessly; no wired bots will be allowed.",
 
     registrationLink: "",
     prize: "Exciting Prizes",
     bppimtRegFees: "Coming Soon",
     outsideRegFees: "Coming Soon",
-    onspotReg: "Available",
+    onspotReg: "TBD",
 
     prelimsDate: "Coming Soon",
     prelimsTiming: [
