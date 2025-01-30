@@ -18,7 +18,7 @@ const SponsorCard = ({ title, image, category }) => {
                 width={300}
                 height={300}
                 alt={title + " Logo"}
-                className="w-full aspect-square rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full aspect-square rounded-xl object-contain transition-transform duration-300 group-hover:scale-110"
             />
 
             {/* Overlay animation */}
