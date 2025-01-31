@@ -13,7 +13,7 @@ const EventCard = ({ title, icon, image }) => {
                 className="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-300 rounded-lg"
             />
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 transition-opacity duration-300 group-hover:from-gray-900 group-hover:via-black"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90 transition-all duration-300 group-hover:from-gray-900 group-hover:via-black"></div>
 
             <div className="absolute bottom-0 left-0 w-full flex flex-col items-center p-4">
                 <Image
@@ -21,10 +21,10 @@ const EventCard = ({ title, icon, image }) => {
                     alt={title}
                     width={70}
                     height={70}
-                    className="transition-transform duration-300 group-hover:scale-110"
+                    className="transition-transform duration-300 group-hover:scale-105"
                     priority
                 />
-                <h3 className="font-ribes text-6xl font-semibold text-white mt-2 text-center transition-transform duration-300 group-hover:scale-110 group-hover:translate-y-1">
+                <h3 className="font-ribes text-6xl font-semibold text-white mt-2 text-center transition-transform duration-300 group-hover:scale-105 group-hover:translate-y-1">
                     {title}
                 </h3>
             </div>

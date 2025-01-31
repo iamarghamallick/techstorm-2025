@@ -52,7 +52,7 @@ const SingleEventSlug = ({ slug }) => {
             {isValidSlug && currEvent && <div>
                 <div className='flex flex-col md:flex-row gap-2 md:gap-8'>
                     <motion.div
-                        initial={{ opacity: 0, y: "100px" }}
+                        initial={{ opacity: 0, y: "30px" }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         className="md:w-1/3 h-80 md:h-auto relative rounded-t-3xl md:rounded-tl-3xl"
@@ -64,7 +64,7 @@ const SingleEventSlug = ({ slug }) => {
 
                         {/* Background Image */}
                         <div
-                            className={`absolute inset-0 transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+                            className={`absolute inset-0 transition-opacity duration-500 rounded-t-3xl md:rounded-tl-3xl ${loading ? "opacity-0" : "opacity-100"
                                 }`}
                             style={{
                                 backgroundImage: `url(${currEvent.bgImage})`,
@@ -85,7 +85,7 @@ const SingleEventSlug = ({ slug }) => {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: "100px" }}
+                        initial={{ opacity: 0, y: "30px" }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         className="md:w-2/3 flex flex-col gap-4"
@@ -185,7 +185,7 @@ const SingleEventSlug = ({ slug }) => {
                             },
                         ].map((item, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: "100px" }}
+                                initial={{ opacity: 0, y: "30px" }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                                 key={index}
@@ -222,7 +222,7 @@ const SingleEventSlug = ({ slug }) => {
                         ))}
 
                         <motion.div
-                            initial={{ opacity: 0, y: "100px" }}
+                            initial={{ opacity: 0, y: "30px" }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                             className="details-box w-full flex justify-between p-2 rounded-lg bg-[#202020c4] h-36 group hover:shadow-lg hover:shadow-green-400 hover:bg-[#2A2A2A] transition-all duration-300"
@@ -256,20 +256,22 @@ const SingleEventSlug = ({ slug }) => {
 
                     <div className="md:w-2/3">
                         {currEvent.rules.map((rule, index) => (
-                            <div key={index}>
+                            <motion.div
+                                initial={{ opacity: 0, y: "30px" }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                key={index}
+                            >
                                 <h1 className={`${poppins.className} font-bold text-2xl md:text-3xl py-4`}>{rule.heading}</h1>
                                 {rule.content.map((content, index) => (
-                                    <motion.div
-                                        initial={{ opacity: 0, y: "30px" }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5 }}
+                                    <div
                                         key={index}
                                         className={`${poppins.className} text-base md:text-lg`}
                                     >
                                         &bull; {content}
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

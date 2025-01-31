@@ -75,7 +75,7 @@ const EventCategorySlug = ({ slug }) => {
                         }
                         return (
                             <AnimatedLink
-                                initial={{ opacity: 0, y: "50px" }}
+                                initial={{ opacity: 0, y: "30px" }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                                 key={card}
