@@ -6,7 +6,7 @@ export const roterrance = {
     icon: "/assets/events/icons/rovers.png",
     description: "TBD",
 
-    registrationLink: "",
+    registrationLink: "Ro-terrance it's an event where your bot has to cross different kinds of terrain and hurdles to reach the final destination. The bot has to be manually controlled and can be both wired and wireless.",
     prize: "Exciting Rewards",
     bppimtRegFees: "TBD",
     outsideRegFees: "TBD",
