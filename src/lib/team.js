@@ -162,7 +162,7 @@ export const allTeams = [
                 "team": "Publicity & Sponsorship Management Team",
                 "phone": 8777481260,
                 "email": "sanjibsen234@gmail.com",
-                "bg_image": "https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/core_members%2Fsanjib_sen.JPG?alt=media&token=a5c3bccf-16b8-4012-a142-fdb8090695da",
+                "bg_image": "https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/core_members%2Fsanjib_sen.jpg?alt=media&token=b8dfb6bb-ac50-4d0b-9c00-8b4abf31dc9b",
                 "image": "/assets/team/core/sanjib_sen.png",
                 "linkedin": "https://www.linkedin.com/in/sanjibsen234/",
                 "bgcolor": "#FF9609"
