@@ -9,7 +9,7 @@ const AnimatedImage = motion(Image);
 
 const Hero = () => {
     return (
-        <div className='relative p-2 min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-96px)] flex flex-col justify-around items-center gap-2 select-none'>
+        <div className='relative py-2 px-2 md:px-20 min-h-[calc(100vh-60px)] md:min-h-[calc(100vh-96px)] flex flex-col justify-around items-center gap-2 select-none'>
             <div className='flex flex-col gap-4 md:gap-8 justify-center items-center'>
 
                 {/* below div is added to fix the design issue on mobile screens */}
@@ -65,12 +65,12 @@ const Hero = () => {
             </div>
 
             <motion.div
-                initial={{ opacity: 0, y: "100px" }}
+                initial={{ opacity: 0, y: "50px" }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 3 }}
                 className="flex items-center"
             >
-                <p className={`${righteous.className} w-11/12 text-base md:text-lg text-[#BEBEBE] leading-tight md:leading-normal`}>Step into the future with <span className='bg-[#AF52DE] text-black rounded-2xl md:py-1 px-2 capitalize font-ribes'>TECHSTORM 2.25</span> the flagship technical fest of B. P. Poddar Institute of Management and Technology, inspired by the limitless potential of the metaverse. Celebrating its 11th edition in 2024, TECHSTORM transcends boundaries, blending innovation and virtual realms to ignite the spirit of technological brilliance like never before.</p>
+                <p className={`${righteous.className} w-11/12 text-base md:text-lg text-[#BEBEBE] leading-tight md:leading-normal`}>Step into the future with <span className='bg-[#AF52DE] text-black rounded-2xl px-2 capitalize font-ribes'>TECHSTORM 2.25</span> the flagship technical fest of B. P. Poddar Institute of Management and Technology, inspired by the limitless potential of the metaverse. Celebrating its 12th edition in 2025, TECHSTORM transcends boundaries, blending innovation and virtual realms to ignite the spirit of technological brilliance like never before.</p>
             </motion.div>
 
             <div className='absolute -bottom-12'>

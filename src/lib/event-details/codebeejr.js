@@ -8,8 +8,8 @@ export const codebeejr = {
 
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfb2JyhdhJZgyrlmouS0O_3sppM33XkKT5obSOeXU3SYLchg/viewform",
     prize: "Exciting Prizes",
-    bppimtRegFees: "No Registration Fee",
-    outsideRegFees: "No Registration Fee",
+    bppimtRegFees: "",
+    outsideRegFees: "No Fee",
     onspotReg: "Not Available",
 
     prelimsDate: "Coming Soon",

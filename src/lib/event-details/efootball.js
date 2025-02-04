@@ -4,7 +4,7 @@ export const efootball = {
     title: "PES (Mobile)",
     bgImage: "/assets/events/PES.jpg",
     icon: "/assets/events/icons/games.png",
-    description: "Join us for an exciting eFootball Mobile Tournament and showcase your gaming skills! Compete in intense matches with top players, adhering to unique rules and collective strength limits. Experience the thrill of prelims and finals, where strategy and precision determine the champion. Open to all gaming enthusiasts, this event promises competitive gameplay and loads of fun. Don’t miss your chance to claim the title and amazing prizes. Get ready to play, compete, and win!",
+    description: "Join us for an exciting eFootball Mobile Tournament and showcase your gaming skills! Compete in intense matches with top players, adhering to unique rules and collective strength limits. Experience the thrill of prelims and finals, where strategy and precision determine the champion. Open to all gaming enthusiasts, this event promises competitive gameplay and loads of fun. Don't miss your chance to claim the title and amazing prizes. Get ready to play, compete, and win!",
 
     registrationLink: "",
     prize: "Exciting Prizes",

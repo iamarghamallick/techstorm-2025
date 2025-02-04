@@ -8,7 +8,7 @@ export const hackstormjr = {
 
     registrationLink: "https://forms.gle/DVgHqhSenj2h89RS8",
     prize: "Exciting Prizes",
-    bppimtRegFees: "No Registration Fee",
+    bppimtRegFees: "",
     outsideRegFees: "No Registration Fee",
     onspotReg: "Not Available",
 

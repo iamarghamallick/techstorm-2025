@@ -1,14 +1,14 @@
 export const technomaniajr = {
     id: 12,
     link_title: "technomaniajr",
-    title: "Technomania Junior",
+    title: "Techno Mania Junior",
     bgImage: "/assets/events/TechnoManiaJunior.jpg",
     icon: "/assets/events/icons/budding.png",
     description: "It is a student-centered competition providing you a unique opportunity to showcase your innovation skills in hardware/physical model design in any area of science and technology towards achieving sustainable development Goals.",
 
     registrationLink: "https://forms.gle/K7bW4i5ZNNqHeFw47",
     prize: "Exciting Prizes",
-    bppimtRegFees: "No Registration Fee",
+    bppimtRegFees: "",
     outsideRegFees: "No Registration Fee",
     onspotReg: "Not Available",
 

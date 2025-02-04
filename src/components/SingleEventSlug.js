@@ -102,19 +102,16 @@ const SingleEventSlug = ({ slug }) => {
                                     image: "/assets/eventdetails-icons/bppimt-logo.png",
                                 },
                                 {
-                                    heading: "Registration Fees for OUTSIDE Students",
+                                    heading: `Registration Fees for ${currEvent.bppimtRegFees === "" ? "ALL" : "OUTSIDE"} Students`,
                                     text: currEvent.outsideRegFees,
                                     image: "/assets/eventdetails-icons/avater.png",
                                 },
                             ].map((item, index) => (
-                                <motion.div
-                                    initial={{ opacity: 0, y: "30px" }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.5 }}
+                                <div
                                     key={index}
-                                    className="details-box w-full flex flex-col md:flex-row justify-between items-end p-2 rounded-lg bg-[#202020c4] min-h-24 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300"
+                                    className={`${item.text === "" ? "hidden" : ""} details-box w-full flex flex-col md:flex-row justify-between items-end p-2 rounded-lg bg-[#202020c4] min-h-24 group hover:shadow-lg hover:shadow-green-300 transition-all duration-300`}
                                 >
-                                    <div className="md:w-2/3 flex flex-col pl-2 justify-end group-hover:scale-[1.02] group-hover:translate-x-1 transition-transform duration-300">
+                                    <div className="w-full md:w-2/3 flex flex-col md:pl-2 justify-end group-hover:scale-[1.02] group-hover:translate-x-1 transition-transform duration-300">
                                         <p className={`${poppins.className} text-sm md:text-base font-semibold`}>{item.heading}</p>
                                         <h1
                                             className={`${poppins.className} font-bold text-2xl md:text-3xl text-[#7C7C7C] group-hover:text-green-300 transition-colors duration-300 hidden md:block`}
@@ -136,7 +133,7 @@ const SingleEventSlug = ({ slug }) => {
                                             className="w-1/3 md:w-auto max-h-28 aspect-square group-hover:rotate-6 group-hover:scale-[1.02] transition-transform duration-300"
                                         />
                                     </div>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
 

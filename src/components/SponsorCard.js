@@ -27,10 +27,10 @@ const SponsorCard = ({ title, image, category }) => {
 
             {/* Text section */}
             <div className="flex flex-col justify-center items-center z-10">
-                <h2 className={`${righteous.className} text-lg md:text-2xl transition-transform duration-300 group-hover:translate-y-1 group-hover:scale-[1.02] text-white`}>
+                <h2 className={`${righteous.className} text-lg md:text-2xl transition-transform duration-300 group-hover:translate-y-1 group-hover:scale-[1.02] text-white text-center`}>
                     {title}
                 </h2>
-                <p className={`${righteous.className} text-xs text-gray-400 transition-opacity duration-300 group-hover:opacity-80`}>
+                <p className={`${righteous.className} text-xs text-gray-400 transition-opacity duration-300 group-hover:opacity-80 text-center`}>
                     {category + " Sponsor"}
                 </p>
             </div>
