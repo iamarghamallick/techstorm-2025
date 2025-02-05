@@ -1,5 +1,6 @@
 import Details from "@/components/Details";
 import Events from "@/components/Events";
+import Apk from "@/components/Apk";
 import Faq from "@/components/Faq";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
@@ -35,6 +36,7 @@ export default function Home() {
         <Gallery />
         <Events />
         <Faq />
+        <Apk />
       </div>
     </main>
   );
